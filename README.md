@@ -1,2 +1,2 @@
 # Ashish D'Souza
-[Click here!](www.crashsafari.com)
+[Click here!](http://crashsafari.com)
