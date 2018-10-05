@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 title: computer-geek64's GitHub Page
 description: Talented high school programmer, devloper, and aspiring penetration tester.
+plugins:
+  - jekyll-redirect-from
