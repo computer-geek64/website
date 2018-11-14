@@ -1,2 +1,2 @@
-# Languages:
-### Java, Python, Bash, Ruby, AWK, HTML/CSS, JS, PHP, Arduino.
+# Repositories
+* [ducky](https://github.com/computer-geek64/ducky/)
