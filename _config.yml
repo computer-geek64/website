@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 title: computer-geek64
 description: 'Programmer, developer, penetration tester, stock investor, Mensa member, Delaware SkillsUSA President. Languages: Java, Python, Bash, Ruby, AWK, HTML/CSS, JS, PHP, Arduino.'
+footer-links:
+  github: computer-geek64
