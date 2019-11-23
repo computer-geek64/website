@@ -17,15 +17,15 @@ a {
 	text-decoration: none;
 }
 
-#a {
-	color: #0f0;
+.red {
+	color: #ff0000;
 }
 
-#c {
+.c {
 	color: #0bc;
 }
 
-#b {
+.dir {
 	color: #ff0096;
 }
 
