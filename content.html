@@ -1,18 +1,50 @@
-<span id="a">user@localhost</span>:<span id="b">~</span><span id="c">$</span> cd About/<!-- .................... -->Ashish
-<span id="a">user@localhost</span>:<span id="b">~</span><span id="c">$</span> cat <!-- .................... -->content.txt
+<script>
+  function getUserIP(onNewIP) { //  onNewIp - your listener function for new IPs
+    //compatibility for firefox and chrome
+    var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+    var pc = new myPeerConnection({
+        iceServers: []
+    }),
+    noop = function() {},
+    localIPs = {},
+    ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g,
+    key;
+
+    function iterateIP(ip) {
+        if (!localIPs[ip]) onNewIP(ip);
+        localIPs[ip] = true;
+    }
+
+     //create a bogus data channel
+    pc.createDataChannel("");
+
+    // create offer and set local description
+    pc.createOffer().then(function(sdp) {
+        sdp.sdp.split('\n').forEach(function(line) {
+            if (line.indexOf('candidate') < 0) return;
+            line.match(ipRegex).forEach(iterateIP);
+        });
+        
+        pc.setLocalDescription(sdp, noop, noop);
+    }).catch(function(reason) {
+        // An error occurred, so handle the failure to connect
+    });
+
+    //listen for candidate events
+    pc.onicecandidate = function(ice) {
+        if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return;
+        ice.candidate.candidate.match(ipRegex).forEach(iterateIP);
+    };
+  }
+  getUserIP(function(ip){document.getElementById("ip").innerHTML = ip;});
+</script>
+<span id="a">ashish@<span id="ip">localhost</span></span>:<span id="b">~</span><span id="c">$</span> cd About/<!-- .................... -->Ashish
+<span id="a">ashish@<span id="id">localhost</span></span>:<span id="b">~t</span><span id="c">$</span> cat <!-- .................... -->content.txt
 <!-- .................... -->cat: content.txt: Permission denied
 <span id="a">user@localhost</span>:<span id="b">~</span><span id="c">$</span> <!-- .................... -->sudo cat content.txt
 [sudo] password for user: <!-- ..... -->*<!-- ..... -->*<!-- ..... -->*<!-- ..... -->*<!-- ..... -->*<!-- ..... -->*<!-- ..... -->*<!-- ..... -->*
-<!-- ........................................................................................................................ -->School: <!-- .................... -->Georgia Institute of Technology
-
-My favorite code quote, "<span id="k">Code for Everyone</span>". <!-- sjkfhskjf -->
-
-Hey There! This is the portflio website in the skin of a terminal.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>You can see that, this is how your portfolio would look like.</p>
-<p>You can introduce yourself here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
-<p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
-<p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
-<p> You can give links to other professional profiles you have on Internet, here: <br> <a href="link1">Profile1</a> <br> <a href="link2">Profile2</a> and <br> <a href="link3">Profile3</a>.</p>
-
-You can also give your email ID for contacting you<!-- slightdelayhere-->, feel free to send me an email at<!-- longlonglongcomment --><a href="Your email ID">Email</a>.
-
-<p>Cheers!</p>
+<!-- ........................................................................................................................ -->
+School: <!-- .................... -->Georgia Institute of Technology
+Degree: <!-- .................... -->Bachelor of Science
+Major:  <!-- .................... -->Computer Science
+GPA:    <!-- .................... -->4.0
