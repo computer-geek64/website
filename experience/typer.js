@@ -97,7 +97,7 @@ function replaceUrls(text) {
 	}
 }
 
-Typer.speed=3;
+Typer.speed=6;
 Typer.file="content.html";
 Typer.init();
  
