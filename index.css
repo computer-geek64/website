@@ -17,16 +17,20 @@ a {
 	text-decoration: none;
 }
 
-.red {
+.user {
 	color: #ff0000;
+}
+
+.dir {
+	color: #2e71e6;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 .c {
 	color: #0bc;
-}
-
-.dir {
-	color: #ff0096;
 }
 
 #k {
