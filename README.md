@@ -1,1 +1,1 @@
-# Hosting for my personal website, [https://ashishdsouza.com](https://ashishdsouza.com)
+# Hosting for my personal website, [ashishdsouza.com](https://ashishdsouza.com)
