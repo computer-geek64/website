@@ -188,6 +188,31 @@ function getBrowser() {
   }
 }
 
+function getTime() {
+  var today = new Date();
+  var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var output = days[today.getDay()] + " " + months[today.getMonth()] + " " + today.getDate() + " ";
+
+  if(today.getHours() < 10) {
+    output += "0";
+  }
+  output += today.getHours() + ":";
+
+  if(today.getMinutes() < 10) {
+    output += "0";
+  }
+  output += today.getMinutes() + ":";
+
+  if(today.getSeconds() < 10) {
+    output += "0";
+  }
+  output += today.getSeconds();
+
+  output += " " + today.getFullYear();
+  return output;
+}
+
 function setLinks() {
   var links = document.querySelectorAll("a[href='']");
   for(var j = 0; j < links.length; j++) {
