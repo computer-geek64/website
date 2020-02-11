@@ -144,7 +144,7 @@ var link_hrefs = {
   "Trotline Reel Website": "https://ashishdsouza.com/trotline-reel/web",
   "Deep Learning for Tropospheric Ozone Predictions": "https://github.com/computer-geek64/MTD",
   "Electrochemical Gas Sensors Integrated with Autonomous Aerial Vehicles for Wide Geographical Area Sensor Networks": "/files/Electrochemical%20Gas%20Sensors%20Integrated%20with%20Autonomous%20Aerial%20Vehicles%20for%20Wide%20Geographical%20Area%20Sensor%20Networks.pdf"
-}
+};
 
 var helpPage = [
   "This is the monstrous help page for my terminal.",
@@ -249,7 +249,7 @@ function ls() {
     if(typeof file[Object.keys(file)[i]] == "string") {
       output.push(Object.keys(file)[i]);
     }
-    else if(accessibleDirs.includes(Object.keys(file)[i])) {
+    else if(getAccessibleDirs().includes(Object.keys(file)[i])) {
       output.push("%+a%+k" + Object.keys(file)[i] + "/%-k%-a");
     }
     else {
@@ -407,7 +407,6 @@ function termHandler() {
 
 var ip = getPublicIP();
 var browser = getBrowser();
-var accessibleDirs = getAccessibleDirs();
 TermGlobals.assignStyle(2, "a", "<a href=\"\" style=\"color: #0bc0bc !important;\">", "</a>");
 TermGlobals.assignStyle(4, "k", "<b style=\"font-weight: bold;\">", "</b>");
 TermGlobals.assignStyle(8, "e", "<span style=\"font-style: italic;\">", "</span>");
