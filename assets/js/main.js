@@ -404,11 +404,3 @@ function termHandler() {
 
   scrollToLine();
 }
-
-var ip = getPublicIP();
-var browser = getBrowser();
-TermGlobals.assignStyle(2, "a", "<a href=\"\" style=\"color: #0bc0bc !important;\">", "</a>");
-TermGlobals.assignStyle(4, "k", "<b style=\"font-weight: bold;\">", "</b>");
-TermGlobals.assignStyle(8, "e", "<span style=\"font-style: italic;\">", "</span>");
-
-document.body.scrollIntoView();
