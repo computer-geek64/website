@@ -20,29 +20,38 @@
     TermGlobals.assignStyle(8, "e", "<span style=\"font-style: italic;\">", "</span>");
     document.body.scrollIntoView();
 
-    term.ps = "Login:";
-    term.open();
-    var time = 0;
-    term.lock = true;
-    setTimeout(function() {term.write("a");}, time += 1000);
-    setTimeout(function() {term.write("s");}, time += 20);
-    setTimeout(function() {term.write("h");}, time += 20);
-    setTimeout(function() {term.write("i");}, time += 20);
-    setTimeout(function() {term.write("s");}, time += 20);
-    setTimeout(function() {term.write("h");}, time += 20);
-    setTimeout(function() {term.newLine();}, time += 20);
-    setTimeout(function() {term.write("Password: ");}, time += 500);
-    setTimeout(function() {term.write("*");}, time += 500);
-    setTimeout(function() {term.write("*");}, time += 100);
-    setTimeout(function() {term.write("*");}, time += 100);
-    setTimeout(function() {term.write("*");}, time += 100);
-    setTimeout(function() {term.write("*");}, time += 100);
-    setTimeout(function() {term.write("*");}, time += 100);
-    setTimeout(function() {term.write("*");}, time += 100);
-    setTimeout(function() {term.write("*");}, time += 100);
-    setTimeout(function() {term.newLine();}, time += 100);
-    setTimeout(function() {term.newLine(); term.write("Last login: Mon Feb 10 00:32:47 EDT 2020 from " + ip + " on " + browser); term.newLine(); term.newLine(); term.write("%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$ ");}, time += 1000);
-    setTimeout(function() {term.write("l");}, time += 500);
+    if(window.location.search.slice(1).split("&").includes("v")) {
+      term.ps = "Login";
+      term.open();
+      var time = 0;
+      term.lock = true;
+      setTimeout(function() {term.write("l");}, time += 1000);
+    }
+    else {
+      term.ps = "Login:";
+      term.open();
+      var time = 0;
+      term.lock = true;
+      setTimeout(function() {term.write("a");}, time += 1000);
+      setTimeout(function() {term.write("s");}, time += 20);
+      setTimeout(function() {term.write("h");}, time += 20);
+      setTimeout(function() {term.write("i");}, time += 20);
+      setTimeout(function() {term.write("s");}, time += 20);
+      setTimeout(function() {term.write("h");}, time += 20);
+      setTimeout(function() {term.newLine();}, time += 20);
+      setTimeout(function() {term.write("Password: ");}, time += 500);
+      setTimeout(function() {term.write("*");}, time += 500);
+      setTimeout(function() {term.write("*");}, time += 100);
+      setTimeout(function() {term.write("*");}, time += 100);
+      setTimeout(function() {term.write("*");}, time += 100);
+      setTimeout(function() {term.write("*");}, time += 100);
+      setTimeout(function() {term.write("*");}, time += 100);
+      setTimeout(function() {term.write("*");}, time += 100);
+      setTimeout(function() {term.write("*");}, time += 100);
+      setTimeout(function() {term.newLine();}, time += 100);
+      setTimeout(function() {term.newLine(); term.write("Last login: Mon Feb 10 00:32:47 EDT 2020 from " + ip + " on " + browser); term.newLine(); term.newLine(); term.write("%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$ ");}, time += 1000);
+      setTimeout(function() {term.write("l");}, time += 500);
+    }
     setTimeout(function() {term.write("s");}, time += 20);
     setTimeout(function() {term.newLine();}, time += 20);
     setTimeout(function() {ls(); term.write("%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$ ");}, time += 500);
