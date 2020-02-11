@@ -132,6 +132,7 @@ var files = {
 };
 
 var link_hrefs = {
+  "..": "..?v",
   "Resume": "/files/Resume.pdf",
   "adsouza@gatech.edu": "mailto:adsouza@gatech.edu",
   "@computer_geek64": "https://instagram.com/computer_geek64",
