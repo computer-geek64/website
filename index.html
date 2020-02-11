@@ -21,7 +21,7 @@
     document.body.scrollIntoView();
 
     if(window.location.search.slice(1).split("&").includes("v")) {
-      term.ps = "Login";
+      term.ps = "%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$";
       term.open();
       var time = 0;
       term.lock = true;
