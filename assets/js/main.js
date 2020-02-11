@@ -148,15 +148,14 @@ var link_hrefs = {
 };
 
 var helpPage = [
-  "This is the monstrous help page for my terminal.",
-  "Commands:",
-  "ls",
-  "cd",
-  "cat",
-  "pwd",
-  "whoami",
-  "help",
-  "exit"
+  "%+kls%-k                   List directory contents",
+  "%+kcd%-k %+tdir%-t               Change directory",
+  "%+kcat%-k %+tfile%-t              Print file contents",
+  "%+kpwd%-k                  Print working directory",
+  "%+kwhoami%-k               Display information about Ashish",
+  "%+kclear%-k                Clear the screen",
+  "%+khelp%-k                 Show this help screen",
+  "%+kexit%-k                 Exit the terminal"
 ];
 
 function getPublicIP() {
@@ -375,7 +374,12 @@ function termHandler() {
   if(line == "help") {
     this.write(helpPage);
   }
-  else if(line == "exit" || line == "clear") {
+  else if(line == "clear") {
+    this.clear();
+    this.prompt();
+    return;
+  }
+  else if(line == "exit") {
     this.close();
     window.location.reload();
     return;
