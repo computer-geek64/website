@@ -160,7 +160,7 @@ var helpPage = [
 
 function getPublicIP() {
   var xmlHttp = new XMLHttpRequest();
-  xmlHttp.open("GET", "http://ipecho.net/plain", false);
+  xmlHttp.open("GET", "https://ipecho.net/plain", false);
   xmlHttp.send();
   return xmlHttp.responseText;
 }
