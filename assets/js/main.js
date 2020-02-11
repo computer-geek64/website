@@ -1,9 +1,8 @@
-//var height = Math.round((screen.height) / 21.9);
-var height = 500;
-var width = Math.round(950 / 10);
+var rows = 500;
+var cols = 100;
 var conf = {
-  cols: width,
-  rows: height,
+  cols: cols,
+  rows: rows,
   handler: termHandler,
   termDiv: "term",
   fontClass: "font",
@@ -132,7 +131,7 @@ var files = {
 };
 
 var link_hrefs = {
-  "..": "..?v",
+  "Parent Directory": "..?v",
   "Resume": "/files/Resume.pdf",
   "adsouza@gatech.edu": "mailto:adsouza@gatech.edu",
   "@computer_geek64": "https://instagram.com/computer_geek64",
@@ -190,11 +189,12 @@ function getBrowser() {
 function setLinks() {
   var links = document.querySelectorAll("a[href='']");
   for(var j = 0; j < links.length; j++) {
-    if(links[j].innerText in link_hrefs) {
-      links[j].href = link_hrefs[links[j].innerText];
+    var text = links[j].innerText.replace(String.fromCharCode(160), " ");
+    if(text in link_hrefs) {
+      links[j].href = link_hrefs[text];
     }
     else {
-      links[j].href = links[j].innerText;
+      links[j].href = text;
     }
   }
 }
@@ -259,10 +259,10 @@ function ls() {
 
   if(cwd != "/") {
     if(permanent_wd == "/") {
-      output.unshift(".. (Parent Directory)");
+      output.unshift("..");
     }
     else {
-      output.unshift("%+a%+k..%-k%-a (Parent Directory)");
+      output.unshift("%+a%+kParent Directory%-k%-a");
     }
   }
 
@@ -376,8 +376,6 @@ function termHandler() {
   }
   else if(line == "clear") {
     this.clear();
-    this.prompt();
-    return;
   }
   else if(line == "exit") {
     this.close();

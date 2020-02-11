@@ -9,8 +9,7 @@ body {
 }
 
 #term {
-  left: calc(50% - 950px / 2) !important;
-  width: 950px;
+  left: calc(50% - 904px / 2) !important;
   top: 50px !important;
   margin-left: auto;
   position: absolute;
