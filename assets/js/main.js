@@ -151,7 +151,7 @@ var link_hrefs = {
 var helpPage = [
   "%+kls%-k                   List directory contents",
   "%+kcd%-k %+tdir%-t               Change directory",
-  "%+kcat%-k %+tfile%-t              Print file contents",
+  "%+kcat%-k %+tfile%-t             Print file contents",
   "%+kpwd%-k                  Print working directory",
   "%+kwhoami%-k               Display information about Ashish",
   "%+kclear%-k                Clear the screen",
