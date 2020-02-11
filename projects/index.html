@@ -1,13 +1,38 @@
-<html>
-  <head>
-    <title>Ashish D'Souza</title>
-    <link rel="icon" href="/assets/img/a.jpg">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-  </head>
-  <body>
-    <script type="text/javascript" src="typer.js">
-    </script>
-    <div id="console"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ashish D'Souza | Projects</title>
+  <link rel="icon" href="/assets/img/a.jpg">
+  <script type="text/javascript" src="/assets/js/termlib.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+  <div id="term"></div>
+  <script>
+    var permanent_wd = "/projects";
+  </script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <script>
+    term.ps = "%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$";
+    term.open();
+    var time = 0;
+    term.lock = true;
+    setTimeout(function() {term.write("l");}, time += 1000);
+    setTimeout(function() {term.write("s");}, time += 20);
+    setTimeout(function() {term.newLine();}, time += 20);
+    setTimeout(function() {ls(); term.write("%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$ ");}, time += 500);
+    setTimeout(function() {term.write("c");}, time += 500);
+    setTimeout(function() {term.write("a");}, time += 20);
+    setTimeout(function() {term.write("t");}, time += 20);
+    setTimeout(function() {term.write(" ");}, time += 20);
+    setTimeout(function() {term.write("*");}, time += 20);
+    setTimeout(function() {term.write(".");}, time += 20);
+    setTimeout(function() {term.write("t");}, time += 20);
+    setTimeout(function() {term.write("x");}, time += 20);
+    setTimeout(function() {term.write("t");}, time += 20);
+    setTimeout(function() {term.newLine();}, time += 20);
+    setTimeout(function() {cat("*.txt"); scrollToLine();}, time += 500);
+    setTimeout(function() {term.ps = "%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$"; term.prompt();}, time);
+  </script>
+</body>
 </html>
