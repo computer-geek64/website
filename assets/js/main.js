@@ -155,9 +155,11 @@ var helpPage = [
   "%+kcat%-k %+tfile%-t             Print file contents",
   "%+kpwd%-k                  Print working directory",
   "%+kwhoami%-k               Display information about Ashish",
+  "%+kecho%-k %+ttext%-t            Print text",
   "%+kclear%-k                Clear the screen",
   "%+khelp%-k                 Show this help screen",
-  "%+kexit%-k                 Exit the terminal"
+  "%+kexit%-k                 Exit the terminal",
+  "%+ktux%-k                  ?????"
 ];
 
 function getPublicIP() {
