@@ -425,6 +425,36 @@ function termHandler() {
   else if(line == "whoami") {
     this.write("An undergraduate computer science student at Georgia Tech.");
   }
+  else if(line.startsWith("echo")) {
+    this.write(line.slice(5));
+  }
+  else if(line.includes("tux")) {
+    this.write(" _____________");
+    this.newLine();
+    this.write("< I <3 Linux! >");
+    this.newLine();
+    this.write(" -------------");
+    this.newLine();
+    this.write("   \\");
+    this.newLine();
+    this.write("    \\");
+    this.newLine();
+    this.write("        .--.");
+    this.newLine();
+    this.write("       |o_o |");
+    this.newLine();
+    this.write("       |:_/ |");
+    this.newLine();
+    this.write("      //   \\ \\");
+    this.newLine();
+    this.write("     (|     | )");
+    this.newLine();
+    this.write("    /'\\_   _/`\\");
+    this.newLine();
+    this.write("    \\___)=(___/");
+    this.newLine();
+    this.newLine();
+  }
   else if(line != "") {
     this.write("bash: " + line + ": command not found");
   }
