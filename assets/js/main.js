@@ -39,7 +39,7 @@ var files = {
         "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n" +
         "%+kInstagram:%-k %+a@computer_geek64%-a\n\n",
     "experience": {
-      "oscar.txt": "\n%+kOptical Science Center for Applied Research%-k\n" +
+      "oscar.txt": "\n%+a%+kOptical Science Center for Applied Research%-k%-a\n" +
           "Position: Research Intern, Software Engineering under NASA research grant\n" +
           "Desription: Worked with university researchers for two years to develop an autonomous aerial\ngreenhouse gas data " +
           "collection module with Arduino. Also allocated and analyzed satellite data with TensorFlow ML framework and" +
@@ -135,6 +135,7 @@ var link_hrefs = {
   "Resume": "/files/Resume.pdf",
   "adsouza@gatech.edu": "mailto:adsouza@gatech.edu",
   "@computer_geek64": "https://instagram.com/computer_geek64",
+  "Optical Science Center for Applied Research": "https://oscar.desu.edu/",
   "ALRT": "https://github.com/computer-geek64/alrt",
   "Lockdown": "https://github.com/computer-geek64/lockdown",
   "WaterSMRT": "https://github.com/computer-geek64/watersmrt",
