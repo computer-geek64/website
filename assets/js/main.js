@@ -32,7 +32,7 @@ var files = {
         "%+kProgramming Languages:%-k Python, Java, Ruby, Bash, SQL, HTML/CSS, JavaScript, R, PHP, Arduino\n" +
         "%+kFrameworks:%-k Flask, Jinja, TensorFlow, Rails, Selenium, OpenCV, Nokogiri, Java FX & Swing\n" +
         "%+kSoftware:%-k LAMP, Android Studio, Arduino, Git, LUKS, AWS S3, Google Cloud OCR, Azure Computer Vision\n" +
-        "%+kDatabases:%-k MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
+        "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
         "%+kOperating Systems:%-k Linux (Kali, Debian, Ubuntu, Fedora, Arch, Raspbian), Windows, OS X\n\n" +
         "%+kEmail:%-k %+aadsouza@gatech.edu%-a\n" +
         "%+kGitHub:%-k %+ahttps://github.com/computer-geek64%-a\n" +
