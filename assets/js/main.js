@@ -51,7 +51,7 @@ var files = {
           "Description: This calculator is a web application that allows users who have coronavirus (COVID-19) to calculate " +
           "the probability of their survival. We devised a machine learning algorithm that can\naccurately predict this value, " +
           "taking into account a wide variety of factors, including information such as pre-existing medical conditions and " +
-          "local population statistics. This project was made for the COVID-19 Global Hackathon (%+ahttps://covid-global-hackathon.devpost.com/%-a).\n" +
+          "local population statistics. This project was made for\nthe COVID-19 Global Hackathon (%+ahttps://covid-global-hackathon.devpost.com/%-a).\n" +
           "Creators: Ashish D'Souza, Varun Lakshmanan, Pranav Pusarla, Sharath Palathingal\n\n",
       "alrt.txt": "\n%+a%+kALRT%-k%-a | Feb '20\n" +
           "Description: ALRT (Automated Life Rescue Tracker) is an application that aims to tackle the\nchallenge of finding " +
