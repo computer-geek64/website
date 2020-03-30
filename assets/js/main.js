@@ -53,51 +53,51 @@ var files = {
           "taking into account a wide variety of factors, including information such as pre-existing medical conditions and " +
           "local population statistics. This project was made for the COVID-19 Global Hackathon (%+ahttps://covid-global-hackathon.devpost.com/%-a).\n" +
           "Creators: Ashish D'Souza, Varun Lakshmanan, Pranav Pusarla, Sharath Palathingal\n\n",
-      "alrt.txt": "\n%+a%+kALRT%-k%-a\n" +
+      "alrt.txt": "\n%+a%+kALRT%-k%-a | Feb '20\n" +
           "Description: ALRT (Automated Life Rescue Tracker) is an application that aims to tackle the\nchallenge of finding " +
           "victims of natural disasters when weather conditions cause power and connectionloss.\n" +
           "Creators: Ashish D'Souza, Sharath Palathingal, Pranav Pusarla, Yash Patel\n\n",
-      "lockdown.txt": "\n%+a%+kLockdown%-k%-a\n" +
+      "lockdown.txt": "\n%+a%+kLockdown%-k%-a | Jan '20\n" +
           "A facial recognition application that locks down your computer when your face is no longer " +
           "visible\nby the webcam. Lockdown was created to efficiently secure your computer when you are not actively " +
           "\nworking or paying full attention to it.\n" +
           "Creators: Ashish D'Souza\n\n",
-      "watersmrt.txt": "\n%+a%+kWaterSMRT%-k%-a\n" +
+      "watersmrt.txt": "\n%+a%+kWaterSMRT%-k%-a | Nov '19\n" +
           "Description: WaterSMRT is an application that monitors water usage in a residence, providing\nreal-time " +
           "predictions and recommendations on how to reduce water usage. WaterSMRT was built for our Global " +
           "Leadership group project.\n" +
           "Creators: Ashish D'Souza, Sharath Palathingal, Ananth Kumar, Pranav Pusarla, Yash Patel, Sai Aruru, Varun " +
           "Lakshmanan\n\n",
-      "milesnap.txt": "\n%+a%+kMileSnap%-k%-a\n" +
+      "milesnap.txt": "\n%+a%+kMileSnap%-k%-a | Oct '19\n" +
           "Description: MileSnap is an application that allows a user to take a picture of a gas station sign\nand " +
           "recieve the fuel type and its corresponding price. Our team created a spatial image\npost-processing " +
           "algorithm for high-accuracy data extraction. MileSnap was developed at HackGT 6 and won the PDI Challenge " +
           "(%+ahttps://devpost.com/software/hackgt6-g74o8p%-a).\n" +
           "Creators: Ashish D'Souza, Sharath Palathingal, Pranav Pusarla, Yash Patel\n\n",
-      "powershell_reverse_shell.txt": "\n%+a%+kPowerShell Reverse Shell%-k%-a\n" +
+      "powershell_reverse_shell.txt": "\n%+a%+kPowerShell Reverse Shell%-k%-a | Jul '18 - Jul '19\n" +
           "Description: This project is a custom-built TCP reverse shell for Windows. The payload was developedwith " +
           "the PowerShell scripting language, and the custom handler was created with Python. The payload is " +
           "currently completely undetected by antiviruses and unblocked by firewalls.\n" +
           "Creators: Ashish D'Souza\n\n",
-      "accessible_audio_keyboard.txt": "\n%+a%+kAccessible Audio Keyboard%-k%-a\n" +
+      "accessible_audio_keyboard.txt": "\n%+a%+kAccessible Audio Keyboard%-k%-a | Oct '18 - Apr '19\n" +
           "Description: The Accessible Audio Keyboard is a predictive audio keyboard that was developed based\non " +
           "research from a Norwegian university. This keyboard allows people with vision and movement\ndisabilities to " +
           "communicate efficiently, implementing dual binary inputs to effectively minimize therequired movement. " +
           "This project also leverages predictive word completion for optimal communication speed, using " +
           "text-to-speech to provide feedback to the user.\n" +
           "Creators: Ashish D'Souza\n\n",
-      "trotline_reel_website.txt": "\n%+a%+kTrotline Reel Website%-k%-a\n" +
+      "trotline_reel_website.txt": "\n%+a%+kTrotline Reel Website%-k%-a | Feb '19 - May '19\n" +
           "Description: I created this website as a full-stack developer for a semester-long engineering\nproject in " +
           "high school.\n" +
           "Creators: Ashish D'Souza\n\n",
-      "deep_learning_for_tropospheric_ozone_predictions.txt": "\n%+a%+kDeep Learning for Tropospheric Ozone Predictions%-k%-a\n" +
+      "deep_learning_for_tropospheric_ozone_predictions.txt": "\n%+a%+kDeep Learning for Tropospheric Ozone Predictions%-k%-a | Oct '18 - Dec '18\n" +
           "Description: Deep Learning for Tropospheric Ozone Predictions was my senior capstone project at\nPolytech " +
           "High School. This project used TensorFlow machine learning framework to construct a deep\nneural network " +
           "to analyze and predict ground-level ozone levels. This project also leveraged\ngovernment air quality " +
           "databases with the Socrata Open Data API (SODA) and SQL-based frameworks in\nPython. The front-end of this " +
           "project was constructed using Java Swing.\n" +
           "Creators: Ashish D'Souza\n\n",
-      "electrochemical_gas_sensors_integrated_with_autonomous_aerial_vehicles_for_wide_geographical_area_sensor_networks.txt": "\n%+a%+kElectrochemical Gas Sensors Integrated with Autonomous Aerial Vehicles for Wide Geographical Area\nSensor Networks%-k%-a\n" +
+      "electrochemical_gas_sensors_integrated_with_autonomous_aerial_vehicles_for_wide_geographical_area_sensor_networks.txt": "\n%+a%+kElectrochemical Gas Sensors Integrated with Autonomous Aerial Vehicles for Wide Geographical Area\nSensor Networks%-k%-a | Jun '18 - Aug '18\n" +
           "Description: I worked with university research students at the Optical Science Center for Applied\n" +
           "Research (OSCAR) under a NASA research grant during my internship to develop this project. We\n" +
           "collectively created an autonomous aerial greenhouse gas data collection module using Arduinos that won " +
