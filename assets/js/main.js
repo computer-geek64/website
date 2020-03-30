@@ -29,7 +29,7 @@ var files = {
         "Design, Linear Algebra, Multivariate Calculus\n" +
         "%+kThreads:%-k Intelligence, Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
-        "%+kProgramming Languages:%-k Java, Python, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R, Arduino\n" +
+        "%+kProgramming Languages:%-k Java, Python, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R\n" +
         "%+kFrameworks:%-k Django, Flask, TensorFlow, Pandas, Rails, Selenium, OpenCV, Nokogiri, Java FX & Swing\n" +
         "%+kSoftware:%-k LAMP, Android Studio, Arduino, Git, LUKS, AWS S3, Google Cloud OCR, Azure Computer Vision\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
