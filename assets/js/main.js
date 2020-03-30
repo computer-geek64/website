@@ -29,8 +29,8 @@ var files = {
         "Design, Linear Algebra, Multivariate Calculus\n" +
         "%+kThreads:%-k Intelligence, Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
-        "%+kProgramming Languages:%-k Python, Java, Ruby, Bash, SQL, HTML/CSS, JavaScript, R, PHP, Arduino\n" +
-        "%+kFrameworks:%-k Flask, Jinja, TensorFlow, Rails, Selenium, OpenCV, Nokogiri, Java FX & Swing\n" +
+        "%+kProgramming Languages:%-k Java, Python, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R, Arduino\n" +
+        "%+kFrameworks:%-k Django, Flask, TensorFlow, Pandas, Rails, Selenium, OpenCV, Nokogiri, Java FX & Swing\n" +
         "%+kSoftware:%-k LAMP, Android Studio, Arduino, Git, LUKS, AWS S3, Google Cloud OCR, Azure Computer Vision\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
         "%+kOperating Systems:%-k Linux (Kali, Debian, Ubuntu, Fedora, Arch, Raspbian), Windows, OS X\n\n" +
@@ -47,6 +47,12 @@ var files = {
           "Dates: Jun 2017 - Jun 2019\n\n"
     },
     "projects": {
+      "covid-19_survival_calculator.txt": "\n%+a%+kCOVID-19 Survival Calculator%-k%-a | Mar '20\n" +
+          "Description: This calculator is a web application that allows users who have coronavirus (COVID-19) to calculate " +
+          "the probability of their survival. We devised a machine learning algorithm that can accurately predict this value, " +
+          "taking into account a wide variety of factors, including information such as pre-existing medical conditions and " +
+          "local population statistics. This project was made for the COVID-19 Global Hackathon (%+ahttps://covid-global-hackathon.devpost.com/%-a).\n" +
+          "Creators: Ashish D'Souza, Varun Lakshmanan, Pranav Pusarla, Sharath Palathingal\n\n",
       "alrt.txt": "\n%+a%+kALRT%-k%-a\n" +
           "Description: ALRT (Automated Life Rescue Tracker) is an application that aims to tackle the\nchallenge of finding " +
           "victims of natural disasters when weather conditions cause power and connectionloss.\n" +
@@ -136,6 +142,7 @@ var link_hrefs = {
   "adsouza@gatech.edu": "mailto:adsouza@gatech.edu",
   "@computer_geek64": "https://instagram.com/computer_geek64",
   "Optical Science Center for Applied Research": "https://oscar.desu.edu/",
+  "COVID-19 Survival Calculator": "https://github.com/computer-geek64/covid19-survival-calculator",
   "ALRT": "https://github.com/computer-geek64/alrt",
   "Lockdown": "https://github.com/computer-geek64/lockdown",
   "WaterSMRT": "https://github.com/computer-geek64/watersmrt",
