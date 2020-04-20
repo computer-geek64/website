@@ -33,7 +33,7 @@ var files = {
         "%+kFrameworks:%-k Django, Flask, TensorFlow, Pandas, Rails, Selenium, SocketIO, OpenCV, Nokogiri, Java FX & Swing\n" +
         "%+kSoftware:%-k LAMP, Android Studio, Arduino, Git, LUKS, AWS S3, Google Cloud OCR, Azure Computer Vision\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
-        "%+kOperating Systems:%-k Linux (Kali, Debian, Ubuntu, Fedora, Arch, Raspbian), Windows, OS X\n\n" +
+        "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, Kali, Qubes OS, Raspbian, Ubuntu), Windows, OS X\n\n" +
         "%+kEmail:%-k %+aadsouza@gatech.edu%-a\n" +
         "%+kGitHub:%-k %+ahttps://github.com/computer-geek64%-a\n" +
         "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n" +
