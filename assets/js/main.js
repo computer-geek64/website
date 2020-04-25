@@ -145,6 +145,7 @@ var link_hrefs = {
   "Resume": "/files/Resume.pdf",
   "adsouza@gatech.edu": "mailto:adsouza@gatech.edu",
   "@computer_geek64": "https://instagram.com/computer_geek64",
+  "Nead Werx, Inc.": "https://www.neadwerx.com/",
   "Optical Science Center for Applied Research": "https://oscar.desu.edu/",
   "COVID-19 Survival Calculator": "https://github.com/computer-geek64/covid19-survival-calculator",
   "ALRT": "https://github.com/computer-geek64/alrt",
