@@ -33,17 +33,13 @@
     setTimeout(function() {term.write("a");}, time += 20);
     setTimeout(function() {term.write("t");}, time += 20);
     setTimeout(function() {term.write(" ");}, time += 20);
-    setTimeout(function() {term.write("o");}, time += 20);
-    setTimeout(function() {term.write("s");}, time += 20);
-    setTimeout(function() {term.write("c");}, time += 20);
-    setTimeout(function() {term.write("a");}, time += 20);
-    setTimeout(function() {term.write("r");}, time += 20);
+    setTimeout(function() {term.write("*");}, time += 20);
     setTimeout(function() {term.write(".");}, time += 20);
     setTimeout(function() {term.write("t");}, time += 20);
     setTimeout(function() {term.write("x");}, time += 20);
     setTimeout(function() {term.write("t");}, time += 20);
     setTimeout(function() {term.newLine();}, time += 20);
-    setTimeout(function() {cat("oscar.txt"); scrollToLine();}, time += 500);
+    setTimeout(function() {cat("*.txt"); scrollToLine();}, time += 500);
     setTimeout(function() {term.ps = "%c(#ff0000)%+kashish@" + ip + "%-k%c(clear):%c(#2e71e6)%+d" + cwd + "%c(clear)%-d$"; term.prompt();}, time);
   </script>
 </body>
