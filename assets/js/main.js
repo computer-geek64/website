@@ -39,10 +39,14 @@ var files = {
         "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n" +
         "%+kInstagram:%-k %+a@computer_geek64%-a\n\n",
     "experience": {
+      "nead_werx.txt": "\n%+a%+kNead Werx, Inc.%-k%-a\n" +
+          "Position: Database Developer Intern\n" +
+          "Description: N/A\n" +
+          "Dates: May 2020 - Present\n\n",
       "oscar.txt": "\n%+a%+kOptical Science Center for Applied Research%-k%-a\n" +
-          "Position: Research Intern, Software Engineering under NASA research grant\n" +
+          "Position: Software Engineering Research Intern, under NASA research grant\n" +
           "Desription: Worked with university researchers for two years to develop an autonomous aerial\ngreenhouse gas data " +
-          "collection module with Arduino. Also allocated and analyzed satellite data with TensorFlow ML framework and" +
+          "collection module with Arduino. Also allocated and analyzed satellite data with TensorFlow ML framework and " +
           "Selenium, and visualized the data on a spatio-temporal map.\n" +
           "Dates: Jun 2017 - Jun 2019\n\n"
     },
