@@ -22,6 +22,8 @@ var cwd = permanent_wd;
 var files = {
   "": {
     "info.txt": "\n%+kName:%-k Ashish M. D'Souza\n" +
+        "%+kCompany:%-k Nead Werx, Inc.\n" +
+        "%+kPosition:%-k Database Developer Intern\n" +
         "%+kSchool:%-k Georgia Institute of Technology\n" +
         "%+kDegree:%-k Bachelor of Science in Computer Science\n" +
         "%+kMajor GPA:%-k 4.0\n" +
@@ -34,7 +36,7 @@ var files = {
         "%+kSoftware:%-k LAMP, Android Studio, Arduino, Git, LUKS, AWS S3, Google Cloud OCR, Azure Computer Vision\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
         "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, Kali, Qubes OS, Raspbian, Ubuntu), Windows, OS X\n\n" +
-        "%+kEmail:%-k %+aadsouza@gatech.edu%-a\n" +
+        "%+kEmail:%-k %+aadsouza@gatech.edu%-a, %+aashish@neadwerx.com%-a\n" +
         "%+kGitHub:%-k %+ahttps://github.com/computer-geek64%-a\n" +
         "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n" +
         "%+kInstagram:%-k %+a@computer_geek64%-a\n\n",
@@ -144,6 +146,7 @@ var link_hrefs = {
   "Parent Directory": "..?v",
   "Resume": "/files/Resume.pdf",
   "adsouza@gatech.edu": "mailto:adsouza@gatech.edu",
+  "ashish@neadwerx.com": "mailto:ashish@neadwerx.com",
   "@computer_geek64": "https://instagram.com/computer_geek64",
   "Nead Werx, Inc.": "https://www.neadwerx.com/",
   "Optical Science Center for Applied Research": "https://oscar.desu.edu/",
