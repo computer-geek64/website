@@ -55,7 +55,7 @@ var files = {
     "projects": {
       "timelock.txt": "\n%+a%+kTimeLock%-k%-a | May '20\n" +
           "Description: A database-oriented implementation of time-lock encryption, which relies on a secure,\n" +
-          "verified third party to prevent falsified decryption attempts. This was developed using Java, Spring\n" +
+          "verified third party to prevent falsified decryption attempts. This was developed using Java, Spring" +
           "Boot, and PostgreSQL. Time-lock encryption is still a theoretical concept, and has yet to become a\n" +
           "true, stable implementation.\n" +
           "Creators: Ashish D'Souza\n\n",
