@@ -43,7 +43,7 @@ var files = {
     "experience": {
       "nead_werx.txt": "\n%+a%+kNead Werx, Inc.%-k%-a\n" +
           "Position: Database Developer Intern\n" +
-          "Description: N/A\n" +
+          "Description: Incoming Database Developer Intern at Nead Werx, Inc for Summer 2020. Working remotely due to COVID-19.\n" +
           "Dates: May 2020 - Present\n\n",
       "oscar.txt": "\n%+a%+kOptical Science Center for Applied Research%-k%-a\n" +
           "Position: Software Engineering Research Intern, under NASA research grant\n" +
@@ -54,7 +54,10 @@ var files = {
     },
     "projects": {
       "timelock.txt": "\n%+a%+kTimeLock%-k%-a | May '20\n" +
-          "Description: A database-oriented implementation of time-lock encryption, which relies on a secure, verified third party to prevent falsified decryption attempts. This was developed using Java, Spring Boot, and PostgreSQL. Time-lock encryption is still a theoretical concept, and has yet to become a true, stable implementation.\n" +
+          "Description: A database-oriented implementation of time-lock encryption, which relies on a secure,\n" +
+          "verified third party to prevent falsified decryption attempts. This was developed using Java, Spring\n" +
+          "Boot, and PostgreSQL. Time-lock encryption is still a theoretical concept, and has yet to become a\n" +
+          "true, stable implementation.\n" +
           "Creators: Ashish D'Souza\n\n",
       "covid-19_survival_calculator.txt": "\n%+a%+kCOVID-19 Survival Calculator%-k%-a | Mar '20\n" +
           "Description: This calculator is a web application that allows users who have coronavirus (COVID-19) to calculate " +
