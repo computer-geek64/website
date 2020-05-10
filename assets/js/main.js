@@ -53,6 +53,9 @@ var files = {
           "Dates: Jun 2017 - Jun 2019\n\n"
     },
     "projects": {
+      "timelock.txt": "\n%+a%+kTimeLock%-k%-a | May '20\n" +
+          "Description: "A database-oriented implementation of time-lock encryption, which relies on a secure, verified third party to prevent falsified decryption attempts. This was developed using Java, Spring Boot, and PostgreSQL. Time-lock encryption is still a theoretical concept, and has yet to become a true, stable implementation.\n" +
+          "Creators: Ashish D'SOuza\n\n",
       "covid-19_survival_calculator.txt": "\n%+a%+kCOVID-19 Survival Calculator%-k%-a | Mar '20\n" +
           "Description: This calculator is a web application that allows users who have coronavirus (COVID-19) to calculate " +
           "the probability of their survival. We devised a machine learning algorithm that can\naccurately predict this value, " +
@@ -150,6 +153,7 @@ var link_hrefs = {
   "@computer_geek64": "https://instagram.com/computer_geek64",
   "Nead Werx, Inc.": "https://www.neadwerx.com/",
   "Optical Science Center for Applied Research": "https://oscar.desu.edu/",
+  "TimeLock": "https://github.com/computer-geek64/timelock",
   "COVID-19 Survival Calculator": "https://github.com/computer-geek64/covid19-survival-calculator",
   "ALRT": "https://github.com/computer-geek64/alrt",
   "Lockdown": "https://github.com/computer-geek64/lockdown",
