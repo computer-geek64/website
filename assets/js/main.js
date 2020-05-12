@@ -43,7 +43,7 @@ var files = {
     "experience": {
       "nead_werx.txt": "\n%+a%+kNead Werx, Inc.%-k%-a\n" +
           "Position: Database Developer Intern\n" +
-          "Description: Assisted in development of Nead Werx product, MerchLogix. Worked remotely due to COVID-19.\n" +
+          "Description: Assisted in development of Nead Werx product, MerchLogix. Worked remotely due to\nCOVID-19.\n" +
           "Dates: May 2020 - Present\n\n",
       "oscar.txt": "\n%+a%+kOptical Science Center for Applied Research%-k%-a\n" +
           "Position: Software Engineering Research Intern, under NASA research grant\n" +
