@@ -32,7 +32,7 @@ var files = {
         "%+kThreads:%-k Intelligence, Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
         "%+kProgramming Languages:%-k Java, Python, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R\n" +
-        "%+kFrameworks:%-k Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, Java Swing, Java FX\n" +
+        "%+kFrameworks:%-k Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, JavaFX & Swing\n" +
         "%+kSoftware:%-k Apache, Android Studio, Arduino, Git, Maven, LUKS, AWS S3, Google Cloud OCR\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
         "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, Kali, Qubes OS, Raspbian, Ubuntu), Windows, OS X\n\n" +
