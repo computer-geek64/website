@@ -249,7 +249,7 @@ function setLinks() {
     }
     else {
       links[j].href = text;
-    }!
+    }
   }
 }
 
