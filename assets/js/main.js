@@ -27,8 +27,8 @@ var files = {
         "%+kSchool:%-k Georgia Institute of Technology\n" +
         "%+kDegree:%-k Bachelor of Science in Computer Science\n" +
         "%+kMajor GPA:%-k 4.0\n" +
-        "%+kRelevant Coursework:%-k Object-Oriented Programming, Data Structures & Algorithms, Discrete Math,\n" +
-        "Objects & Design, Linear Algebra, Multivariate Calculus, Computer Organization & Programming, Introduction to Artificial Intelligence\n" +
+        "%+kRelevant Coursework:%-k OOP, Data Struct. & Algo., Discrete Math, Objects & Design, Linear Algebra,\n" +
+        "Multivariate Calculus, Computer Organization & Programming, Introduction to Artificial Intelligence\n" +
         "%+kThreads:%-k Intelligence, Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
         "%+kProgramming Languages:%-k Java, Python, Ruby, Bash, SQL, Perl, JavaScript, HTML/CSS, PHP, R\n" +
