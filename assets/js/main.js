@@ -31,7 +31,7 @@ var files = {
         "Multivariate Calculus, Computer Organization & Programming, Introduction to Artificial Intelligence\n" +
         "%+kThreads:%-k Intelligence, Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
-        "%+kProgramming Languages:%-k Java, Python, Ruby, Bash, SQL, Perl, JavaScript, HTML/CSS, PHP, R\n" +
+        "%+kProgramming Languages:%-k Java, Python, C, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R\n" +
         "%+kFrameworks:%-k Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, JavaFX & Swing\n" +
         "%+kSoftware:%-k Apache, Android Studio, Arduino, Git, Maven, LUKS, AWS S3, Google Cloud OCR\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
