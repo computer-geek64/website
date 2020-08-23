@@ -1,0 +1,380 @@
+% Resume Data %
+\newif\iftimelock
+\newif\ifcovidsurvivalcalculator
+\newif\ifalrt
+\newif\iffirestorm
+\newif\ifkalistorm
+\newif\ifwatersmrt
+\newif\ifmilesnap
+\newif\ifdeeplearningfortroposphericozoneprediction
+
+\timelocktrue
+\covidsurvivalcalculatortrue
+\alrttrue
+\firestormtrue
+\kalistormfalse
+\watersmrtfalse
+\milesnaptrue
+\deeplearningfortroposphericozonepredictionfalse
+
+
+% Variables %
+\newcommand{\homePath}{/home/ashish}
+\newcommand{\fontsPath}{\homePath/.fonts/}
+
+
+% Document Class %
+\documentclass[11pt,letterpaper]{article}
+
+
+% Packages %
+\usepackage[left=0.25in,right=0.25in,top=0.3in,bottom=0.3in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+
+% Fonts %
+\newfontfamily{\notoserif}[Path=\fontsPath]{NotoSerif-Regular.ttf}
+\newfontfamily{\notoserifbold}[Path=\fontsPath]{NotoSerif-Bold.ttf}
+\newfontfamily{\montserrat}[Path=\fontsPath]{Montserrat-Regular.ttf}
+\newfontfamily{\ebgaramond}[Path=\fontsPath]{EBGaramond-Regular.ttf}
+\newfontfamily{\ebgaramondbold}[Path=\fontsPath]{EBGaramond-Bold.ttf}
+\newfontfamily{\ebgaramonditalic}[Path=\fontsPath]{EBGaramond-Italic.ttf}
+
+
+% Metadata %
+\title{Resume}
+\date{2020-08-23}
+\author{Ashish D'Souza}
+
+
+% Settings
+\setlength{\parindent}{0pt}
+\titlespacing*{\section}{0pt}{0pt}{4pt}
+\titleformat{\section}{\fontsize{13}{13}\selectfont\montserrat}{}{}{}[\titlerule]
+\setitemize{nosep,labelsep=2pt,leftmargin=*}
+
+
+% Document %
+\begin{document}
+  \ebgaramond
+  \pagenumbering{gobble}
+
+
+  % Contact Information %
+  \begin{center}
+    {\fontsize{24}{24}\selectfont{\notoserifbold{Ashish D'Souza}}}
+    \\
+    {\fontsize{10}{10}\selectfont{
+      {\notoserif{adsouza@gatech.edu |}}
+      {\notoserifbold{ashishdsouza.com}}
+      {\notoserif{| (302) 857-0030 |}}
+      {\notoserifbold{linkedin.com/in/ashish-dsouza}}
+      {\notoserif{| Winter Haven, FL}}
+    }}
+  \end{center}
+
+
+  % Education %
+  \section*{EDUCATION}
+  
+  {\fontsize{12}{12}\selectfont{
+    {\ebgaramondbold{Georgia Institute of Technology}}
+    | Atlanta, GA
+    \hfill{}
+    May 2022
+  }}
+
+  \begin{itemize}
+    \item{
+      Bachelor of Science in
+      {\ebgaramonditalic{Computer Science}}
+      \textemdash{}
+      Major GPA: 4.0
+    }
+    
+    \item{
+      {\ebgaramondbold{Coursework}}
+      \textemdash{}
+      OOP, Data Struct. \& Algo., Discrete Math, Obj. \& Design, Lin. Alg., Multivar Calc., Comp. Org. \& Prog., Intro to AI
+    }
+
+    \item{
+      {\ebgaramondbold{Threads}}
+      \textemdash{}
+      Intelligence, Information Internetworks
+    }
+  \end{itemize}
+
+  \bigskip
+
+
+  % Experience %
+  \section*{EXPERIENCE}
+
+  {\fontsize{12}{12}\selectfont{
+    {\ebgaramondbold{Nead Werx, Inc.}}
+    | Atlanta, GA |
+    {\ebgaramonditalic{Database Developer Intern}}
+    \hfill{}
+    May '20 - Aug '20
+  }}
+  
+  \begin{itemize}
+    \item{Worked remotely with database team on Nead Werx product, MerchLogix, due to COVID-19 outbreak}
+    
+    \item{Developed functional transcription software database for sample insurance company using PostgreSQL and Perl}
+  \end{itemize}
+
+  {\fontsize{12}{12}\selectfont{
+    {\ebgaramondbold{Optical Science Center for Applied Research}}
+    | Dover, DE |
+    {\ebgaramonditalic{Software Engineering Intern}}
+    \hfill{}
+    Jun '17 - Jun '19
+  }}
+
+  \begin{itemize}
+    \item{Constructed an autonomous aerial greenhouse gas data collection module with Arduino}
+    
+    \item{Retrieved and analyzed satellite data with TensorFlow ML framework and Selenium}
+  \end{itemize}
+
+  \bigskip
+
+  
+  % Projects %
+  \section*{PROJECTS}
+
+  \iftimelock
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{TimeLock}}
+      | https://github.com/computer-geek64/timelock
+      \hfill{}
+      May '20
+    }}
+
+    \begin{itemize}
+      \item{TimeLock is a database-oriented implementation of the theoretical concept of time-lock encryption, using RSA 2048-bit encryption}
+
+      \item{Built the REST API to perform protected CRUD operations on the database, and the client CLI program to interface with the API}
+
+      \item{
+        {\ebgaramondbold{Software:}}
+        Java, Spring Boot, PostgreSQL, Maven, Java Persistence API (JPA)
+      }
+    \end{itemize}
+  \fi
+
+  \ifcovidsurvivalcalculator
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{COVID-19 Survival Calculator}}
+      | https://github.com/computer-geek64/covid19-survival-calculator
+      \hfill{}
+      Mar '20
+    }}
+
+    \begin{itemize}
+      \item{A web application that allows users with the coronavirus to calculate the probability of their survival}
+
+      \item{Programmed the back-end REST API and developed the user demographics database system. Also web scraped for and ran data analysis on live COVID-19 datasets, and helped devise the gradient boosting machine learning models.}
+
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Django, Jinja, PostgreSQL, Pandas, XGBoost, LightGBM, Ruby, Nokogiri, JavaScript, HTML/CSS
+      }
+    \end{itemize}
+  \fi
+
+  \ifalrt
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{ALRT (Automated Life Rescue Tracker)}}
+      | https://github.com/computer-geek64/alrt
+      \hfill{}
+      Feb '20
+    }}
+
+    \begin{itemize}
+      \item{ALRT is a multi-platform application that passively collects and stores location data to help first responders of natural disasters locate missing persons after conditions cause power/connection loss, while web scraping public databases for live disaster data.}
+
+      \item{Developed the back-end API and managed a database cluster. Also designed the predictive location algorithm and web scraper.}
+
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Flask, MongoDB, Selenium, TensorFlow, JavaScript, Firebase, React Native, ReactJS
+      }
+    \end{itemize}
+  \fi
+
+  \iffirestorm
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Firestorm}}
+      | https://github.com/computer-geek64/firestorm
+      \hfill{}
+      Dec '18 - Present
+    }}
+
+    \begin{itemize}
+      \item{Created and maintained a personal server running a custom version of CentOS 8 for secure file sharing/centralization, remote code\\development, penetration testing, password/secret management, media streaming, and gaming.}
+
+      \item{Built a private projects codebase using Git VCS and backed by a PostgreSQL database system, accessible through the web interface}
+
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Flask, Jinja, PostgreSQL, SQLite, HTML/CSS, JavaScript, Apache, CentOS 8
+      }
+    \end{itemize}
+  \fi
+
+  \ifkalistorm
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Kalistorm}}
+      | https://github.com/computer-geek64/kalistorm
+      \hfill{}
+      Dec '18 - July '20
+    }}
+
+    \begin{itemize}
+      \item{Created and maintained a personal server running Kali Linux ARM on a Raspberry Pi for secure file sharing, custom API access, remote code development, penetration testing, data encryption, media streaming, and gaming.
+      
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Flask, Jinja, SQLite, Apache, Kali Linux, LUKS, HTML/CSS, JavaScript, MySQL, PHP
+      }
+    \end{itemize}
+  \fi
+
+  \ifwatersmrt
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{WaterSMRT}}
+      | https://github.com/computer-geek64/watersmrt
+      \hfill{}
+      Nov '19
+    }}
+
+    \begin{itemize}
+      \item{WaterSMRT is an app that monitors water usage in residences, providing eral-time predictions and recommendations on how to reduce water usage.}
+
+      \item{Developed and connected the back-end API to hardware sensors, and managed the SQLite database.}
+
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Flask, SQLite, Arduino, JavaScript, React Native
+      }
+    \end{itemize}
+  \fi
+
+  \ifmilesnap
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{MileSnap}}
+      |
+      {\ebgaramonditalic{PDI Winning Project at HackGT}}
+      | https://devpost.com/software/hackgt6-g74o8p
+      \hfill{}
+      Oct '19
+    }}
+
+    \begin{itemize}
+      \item{A cross-platform app that allows users to take a picture of a gas station sign and receive fuel type and price}
+
+      \item{Devised an image post-processing spatial algorithm to extract fuel data, and an image pre-processing bilateral blur algorithm}
+
+      \item{Implemented the back-end API that leveraged a variety of cloud services, including AWS S3 Bucket, Google Cloud OCR, Azure CV}
+
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Flask, OpenCV, AWS S3 Bucket, Google Cloud OCR, Azure Computer Vision, JavaScript, React Native
+      }
+    \end{itemize}
+  \fi
+
+  \ifdeeplearningfortroposphericozoneprediction
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Deep Learning for Tropospheric Ozone Prediction}}
+      | https://github.com/computer-geek64/MTD
+      \hfill{}
+      Oct '18 - Dec '18
+    }}
+
+    \begin{itemize}
+      \item{Software application that uses deep learning to predict harmful tropospheric ozone levels in local areas}
+      
+          \item{Trained a Deep Neural Network with Adagrad optimizer and Leaky ReLU, also used k-NN for outlier detection}
+      
+      \item{Designed front-end desktop application GUI and leveraged government air quality database with Socrata Open Data API and SQL}
+
+      \item{
+        {\ebgaramondbold{Software:}}
+        Java, Python, TensorFlow, TensorBoard, Swing, SQL, SODA, NumPy
+      }
+    \end{itemize}
+  \fi
+
+  \bigskip
+
+  
+  % Awards %
+  \section*{AWARDS}
+
+  \begin{itemize}
+    \item{
+      HackGT 6 Hackathon
+      \textemdash{}
+      {\ebgaramonditalic{PDI Award for MileSnap Project}}
+      (2019)
+    }
+
+    \item{
+      SkillsUSA Computer Programming
+      \textemdash{}
+      {\ebgaramonditalic{National Gold Medalist}}
+      (2018),
+      {\ebgaramonditalic{4x State Gold Medalist}}
+      (2015-19)
+    }
+
+    \item{
+      Regional Multi-state Science Fair
+      \textemdash{}
+      {\ebgaramonditalic{First Place}}
+      (2018),
+      {\ebgaramonditalic{Third Place}}
+      (2017)
+    }
+  \end{itemize}
+
+  \bigskip
+
+
+  % Skills %
+  \section*{SKILLS}
+
+  \begin{itemize}
+    \item{
+      {\ebgaramondbold{Programming Languages:}}
+      Java, Python, C, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R
+    }
+
+    \item{
+      {\ebgaramondbold{Frameworks:}}
+      Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO, OpenCV, Nokogiri, JavaFX \& Swing
+    }
+
+    \item{
+      {\ebgaramondbold{Software:}}
+      Android Studio, Arduino, Git, Maven, \LaTeX, LUKS, AWS S3
+    }
+
+    \item{
+      {\ebgaramondbold{Databases:}}
+      PostgreSQL, MySQL, MongoDB, SQLite, MariaDB
+    }
+
+    \item{
+      {\ebgaramondbold{Operating Systems:}}
+      Linux (Arch, Fedora, Debian, CentOS, Kali, Qubes OS, Raspbian, Ubuntu), Windows, OS X
+    }
+  \end{itemize}
+\end{document}
+
