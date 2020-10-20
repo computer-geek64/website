@@ -1,4 +1,5 @@
 % Resume Data %
+\newif\iffizz
 \newif\iftimelock
 \newif\ifcovidsurvivalcalculator
 \newif\ifalrt
@@ -8,9 +9,10 @@
 \newif\ifmilesnap
 \newif\ifdeeplearningfortroposphericozoneprediction
 
+\fizztrue
 \timelocktrue
 \covidsurvivalcalculatortrue
-\alrttrue
+\alrtfalse
 \firestormtrue
 \kalistormfalse
 \watersmrtfalse
@@ -101,11 +103,11 @@
       OOP, Data Struct. \& Algo., Discrete Math, Obj. \& Design, Lin. Alg., Multivar Calc., Comp. Org. \& Prog., Intro to AI
     }
 
-    \item{
-      {\ebgaramondbold{Threads}}
-      \textemdash{}
-      Intelligence, Information Internetworks
-    }
+    %\item{
+    %  {\ebgaramondbold{Threads}}
+    %  \textemdash{}
+    %  Intelligence \& Information Internetworks
+    %}
   \end{itemize}
 
   \bigskip
@@ -113,6 +115,18 @@
 
   % Experience %
   \section*{EXPERIENCE}
+
+  {\fontsize{12}{12}\selectfont{
+    {\ebgaramondbold{Amazon}}
+    | San Francisco, CA |
+    {\ebgaramonditalic{Software Development Engineer Intern}}
+    \hfill{}
+    May '21 - Present
+  }}
+
+  \begin{itemize}
+    \item{Incoming Amazon SDE-1 Intern for Summer 2021}
+  \end{itemize}
 
   {\fontsize{12}{12}\selectfont{
     {\ebgaramondbold{Nead Werx, Inc.}}
@@ -147,6 +161,26 @@
   
   % Projects %
   \section*{PROJECTS}
+
+  \iffizz
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Fizz}}
+      |
+      {\ebgaramonditalic{BlackRock Winning Project at HackGT 7}}
+      | https://devpost.com/software/hackgt7
+      \hfill{}
+      Oct '20
+    }}
+
+    \begin{itemize}
+      \item{A web-based interactive personal financial consultant, providing the beginning investor with insight rivaling that of financial experts}
+      \item{Developed the back-end API and managed a database cluster. Also helped design the NLP model and financial analysis assessments.}
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Flask, CQL, JavaScript, ReactJS, DataStax Astra, Google Dialogflow, Google Firebase
+      }
+    \end{itemize}
+  \fi
 
   \iftimelock
     {\fontsize{12}{12}\selectfont{
@@ -270,7 +304,7 @@
     {\fontsize{12}{12}\selectfont{
       {\ebgaramondbold{MileSnap}}
       |
-      {\ebgaramonditalic{PDI Winning Project at HackGT}}
+      {\ebgaramonditalic{PDI Winning Project at HackGT 6}}
       | https://devpost.com/software/hackgt6-g74o8p
       \hfill{}
       Oct '19
@@ -320,11 +354,26 @@
 
   \begin{itemize}
     \item{
-      HackGT 6 Hackathon
-      \textemdash{}
-      {\ebgaramonditalic{PDI Award for MileSnap Project}}
+      HackGT Hackathon \textemdash{}
+      {\ebgaramonditalic{BlackRock Sponsor Award for Fizz Project}}
+      (2020),
+      {\ebgaramonditalic{PDI Sponsor Award for MileSnap Project}}
       (2019)
     }
+
+    %\item{
+    %  HackGT 7 Hackathon
+    %  \textemdash{}
+    %  {\ebgaramonditalic{BlackRock Sponsor Award for Fizz Project}}
+    %  (2020)
+    %}
+
+    %\item{
+    %  HackGT 6 Hackathon
+    %  \textemdash{}
+    %  {\ebgaramonditalic{PDI Sponsor Award for MileSnap Project}}
+    %  (2019)
+    %}
 
     \item{
       SkillsUSA Computer Programming
@@ -354,7 +403,7 @@
   \begin{itemize}
     \item{
       {\ebgaramondbold{Programming Languages:}}
-      Java, Python, C, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R
+      Java, Python, C, Perl, Ruby, Bash, SQL/CQL, JavaScript, HTML/CSS, PHP, R
     }
 
     \item{
@@ -364,12 +413,12 @@
 
     \item{
       {\ebgaramondbold{Software:}}
-      Android Studio, Arduino, Git, Maven, \LaTeX, LUKS, AWS S3
+      Android Studio, Arduino, Git, Maven, \LaTeX, Google Dialogflow
     }
 
     \item{
       {\ebgaramondbold{Databases:}}
-      PostgreSQL, MySQL, MongoDB, SQLite, MariaDB
+      PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB
     }
 
     \item{
