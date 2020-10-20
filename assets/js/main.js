@@ -22,25 +22,28 @@ var cwd = permanent_wd;
 var files = {
   "": {
     "info.txt": "\n%+kName:%-k Ashish M. D'Souza\n" +
-        "%+kCompany:%-k Nead Werx, Inc.\n" +
-        "%+kPosition:%-k Database Developer Intern\n" +
+        "%+kCompany:%-k Amazon\n" +
+        "%+kPosition:%-k Software Developer Engineer Intern\n" +
         "%+kSchool:%-k Georgia Institute of Technology\n" +
         "%+kDegree:%-k Bachelor of Science in Computer Science\n" +
         "%+kMajor GPA:%-k 4.0\n" +
         "%+kRelevant Coursework:%-k OOP, Data Struct. & Algo., Discrete Math, Objects & Design, Linear Algebra,\n" +
         "Multivariate Calculus, Computer Organization & Programming, Introduction to Artificial Intelligence\n" +
-        "%+kThreads:%-k Intelligence, Information Internetworks\n" +
+        "%+kThreads:%-k Intelligence & Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
-        "%+kProgramming Languages:%-k Java, Python, C, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R\n" +
+        "%+kProgramming Languages:%-k Java, Python, C, Perl, Ruby, Bash, SQL/CQL, JavaScript, HTML/CSS, PHP, R\n" +
         "%+kFrameworks:%-k Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, JavaFX & Swing\n" +
-        "%+kSoftware:%-k Apache, Android Studio, Arduino, Git, Maven, LUKS, AWS S3, Google Cloud OCR\n" +
-        "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, SQLite, MariaDB, JSON\n" +
-        "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, Kali, Qubes OS, Raspbian, Ubuntu), Windows, OS X\n\n" +
+        "%+kSoftware:%-k Apache HTTP Server, Android Studio, Arduino, Git, Maven, LaTeX, Google Dialogflow\n" +
+        "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB\n" +
+        "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, CentOS, Kali, Qubes OS, Raspbian), Windows, OS X\n\n" +
         "%+kEmail:%-k %+aadsouza@gatech.edu%-a, %+aashish@neadwerx.com%-a\n" +
         "%+kGitHub:%-k %+ahttps://github.com/computer-geek64%-a\n" +
-        "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n" +
-        "%+kInstagram:%-k %+a@computer_geek64%-a\n\n",
+        "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n\n",
     "experience": {
+      "amazon.txt": "\n%+a%+kAmazon%-k%-a\n" +
+          "Position: Software Developer Engineer Intern\n" +
+          "Description: Incoming SDE-1 Intern for Summer 2021\n" +
+          "Dates: May 2021 - Present\n\n",
       "nead_werx.txt": "\n%+a%+kNead Werx, Inc.%-k%-a\n" +
           "Position: Database Developer Intern\n" +
           "Description: Worked remotely with database team on Nead Werx product, MerchLogix, due to COVID-19\n" +
@@ -154,8 +157,7 @@ var link_hrefs = {
   "Parent Directory": "..?v",
   "Resume": "/files/Resume.pdf",
   "adsouza@gatech.edu": "mailto:adsouza@gatech.edu",
-  "ashish@neadwerx.com": "mailto:ashish@neadwerx.com",
-  "@computer_geek64": "https://instagram.com/computer_geek64",
+  "Amazon": "https://www.amazon.com/",
   "Nead Werx, Inc.": "https://www.neadwerx.com/",
   "Optical Science Center for Applied Research": "https://oscar.desu.edu/",
   "TimeLock": "https://github.com/computer-geek64/timelock",
