@@ -36,7 +36,7 @@ var files = {
         "%+kSoftware:%-k Apache HTTP Server, Android Studio, Arduino, Git, Maven, LaTeX, Google Dialogflow\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB\n" +
         "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, CentOS, Kali, Qubes OS, Raspbian), Windows, OS X\n\n" +
-        "%+kEmail:%-k %+aadsouza@gatech.edu%-a, %+aashish@neadwerx.com%-a\n" +
+        "%+kEmail:%-k %+aadsouza@gatech.edu%-a\n" +
         "%+kGitHub:%-k %+ahttps://github.com/computer-geek64%-a\n" +
         "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n\n",
     "experience": {
