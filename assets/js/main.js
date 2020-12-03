@@ -105,7 +105,7 @@ var files = {
           "Creators: Ashish D'Souza\n\n",
       "trotline_reel_website.txt": "\n%+a%+kTrotline Reel Website%-k%-a | Feb '19 - May '19\n" +
           "Description: I created this website as a full-stack developer for a semester-long engineering\nproject in " +
-          "high school.\n" +
+          "high school, while working alongside mechanical engineers.\n" +
           "Creators: Ashish D'Souza\n\n",
       "deep_learning_for_tropospheric_ozone_predictions.txt": "\n%+a%+kDeep Learning for Tropospheric Ozone Predictions%-k%-a | Oct '18 - Dec '18\n" +
           "Description: Deep Learning for Tropospheric Ozone Predictions was my senior capstone project at\nPolytech " +
