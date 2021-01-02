@@ -1,4 +1,5 @@
 % Resume Data %
+\newif\ifhuffskew
 \newif\iffizz
 \newif\iftimelock
 \newif\ifcovidsurvivalcalculator
@@ -9,6 +10,7 @@
 \newif\ifmilesnap
 \newif\ifdeeplearningfortroposphericozoneprediction
 
+\huffskewtrue
 \fizztrue
 \timelocktrue
 \covidsurvivalcalculatortrue
@@ -116,17 +118,17 @@
   % Experience %
   \section*{EXPERIENCE}
 
-  {\fontsize{12}{12}\selectfont{
-    {\ebgaramondbold{Amazon}}
-    | San Francisco, CA |
-    {\ebgaramonditalic{Software Development Engineer Intern}}
-    \hfill{}
-    May '21 - Present
-  }}
+  %{\fontsize{12}{12}\selectfont{
+  %  {\ebgaramondbold{Amazon}}
+  %  | San Francisco, CA |
+  %  {\ebgaramonditalic{Software Development Engineer Intern}}
+  %  \hfill{}
+  %  May '21 - Present
+  %}}
 
-  \begin{itemize}
-    \item{Incoming Amazon SDE-1 Intern for Summer 2021}
-  \end{itemize}
+  %\begin{itemize}
+  %  \item{Incoming Amazon SDE-1 Intern for Summer 2021}
+  %\end{itemize}
 
   {\fontsize{12}{12}\selectfont{
     {\ebgaramondbold{Nead Werx, Inc.}}
@@ -161,6 +163,23 @@
   
   % Projects %
   \section*{PROJECTS}
+
+  \ifhuffskew
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Huffskew}}
+      | https://github.com/computer-geek64/huffskew
+      \hfill{}
+      Dec '20
+    }}
+
+    \begin{itemize}
+      \item{An optimization of the Huffman compression algorithm for highly skewed alphabet distributions using an ordered replacement method}
+      \item{
+        {\ebgaramondbold{Software:}}
+        C++, Boost Libraries
+      }
+    \end{itemize}
+  \fi
 
   \iffizz
     {\fontsize{12}{12}\selectfont{
