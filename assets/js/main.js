@@ -32,7 +32,7 @@ var files = {
         "& Analysis of Algo., Computer Systems & Networks\n" +
         "%+kThreads:%-k Intelligence & Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
-        "%+kProgramming Languages:%-k Python, Java, C, C++, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R" +
+        "%+kProgramming Languages:%-k Python, Java, C, C++, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R\n" +
         "%+kFrameworks:%-k Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, JavaFX & Swing\n" +
         "%+kSoftware:%-k Apache HTTP Server, Android Studio, Arduino, Git, Maven, LaTeX, Google Dialogflow\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB\n" +
