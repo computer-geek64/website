@@ -28,10 +28,11 @@ var files = {
         "%+kDegree:%-k Bachelor of Science in Computer Science\n" +
         "%+kMajor GPA:%-k 4.0\n" +
         "%+kRelevant Coursework:%-k OOP, Data Struct. & Algo., Discrete Math, Objects & Design, Linear Algebra,\n" +
-        "Multivariate Calculus, Computer Organization & Programming, Introduction to Artificial Intelligence\n" +
+        "Multivariate Calculus, Computer Organization & Programming, Intro. to A.I., Machine Learning, Design" +
+        "& Analysis of Algo., Computer Systems & Networks\n" +
         "%+kThreads:%-k Intelligence & Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
-        "%+kProgramming Languages:%-k Java, Python, C, C++, Perl, Ruby, Bash, SQL/CQL, JavaScript, HTML/CSS, PHP, R" +
+        "%+kProgramming Languages:%-k Python, Java, C, C++, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R" +
         "%+kFrameworks:%-k Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, JavaFX & Swing\n" +
         "%+kSoftware:%-k Apache HTTP Server, Android Studio, Arduino, Git, Maven, LaTeX, Google Dialogflow\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB\n" +
