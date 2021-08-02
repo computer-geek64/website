@@ -33,7 +33,7 @@ var files = {
         "%+kThreads:%-k Intelligence & Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
         "%+kProgramming Languages:%-k Python, Java, C, C++, Bash, SQL, JavaScript, HTML/CSS, Perl, Ruby, PHP, R\n" +
-        "%+kFrameworks:%-k Django, Flask, PyTorch, TensorFlow, Pandas, Spring Boot, Rails, Selenium,\nSocketIO, OpenCV, Nokogiri, JavaFX & Swing\n" +
+        "%+kFrameworks:%-k Django, Flask, PyTorch, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, JavaFX & Swing\n" +
         "%+kSoftware:%-k Git, Docker, AWS (S3, EC2, ECR), Google Cloud, LaTeX, Android Studio, Arduino, Maven\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB\n" +
         "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, CentOS, Kali, Qubes OS, Raspbian), Windows, OS X\n\n" +
@@ -43,10 +43,11 @@ var files = {
     "experience": {
       "amazon.txt": "\n%+a%+kAmazon%-k%-a\n" +
           "Position: Software Development Engineering Intern\n" +
-          "Description: Worked in Search Science & AI with Magnus Ranking team to enhance search quality using the latest IR and NLP research\n" +
-          "Built distributed computing platform to further improve GPU-accelerated training speed by parallelizing advanced ML models\n" +
-          "Enabled multi-node, multi-GPU training for BERT, GPT-3, DNN models using PyTorch with distributed data parallelism\n" +
-          "Dates: May 2021 - Present\n\n",
+          "Description: Worked in Search Science & AI with Magnus Ranking team to enhance search quality using\n" +
+          "the latest IR and NLP research. Built distributed computing platform to further improve\n" +
+          "GPU-accelerated training speed by parallelizing advanced ML models. Enabled multi-node, multi-GPU\n" +
+          "training for BERT, GPT-3, DNN models using PyTorch with distributed data parallelism.\n" +
+          "Dates: May 2021 - August 2021\n\n",
       "nead_werx.txt": "\n%+a%+kNead Werx, Inc.%-k%-a\n" +
           "Position: Database Developer Intern\n" +
           "Description: Worked remotely with database team on Nead Werx product, MerchLogix, due to COVID-19\n" +
