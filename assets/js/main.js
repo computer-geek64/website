@@ -32,9 +32,9 @@ var files = {
         "& Analysis of Algo., Computer Systems & Networks\n" +
         "%+kThreads:%-k Intelligence & Information Internetworks\n" +
         "%+a%+kResume%-k%-a\n\n" +
-        "%+kProgramming Languages:%-k Python, Java, C, C++, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R\n" +
-        "%+kFrameworks:%-k Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO,\nOpenCV, Nokogiri, JavaFX & Swing\n" +
-        "%+kSoftware:%-k Apache HTTP Server, Android Studio, Arduino, Git, Maven, LaTeX, Google Dialogflow\n" +
+        "%+kProgramming Languages:%-k Python, Java, C, C++, Bash, SQL, JavaScript, HTML/CSS, Perl, Ruby, PHP, R\n" +
+        "%+kFrameworks:%-k Django, Flask, PyTorch, TensorFlow, Pandas, Spring Boot, Rails, Selenium,\nSocketIO, OpenCV, Nokogiri, JavaFX & Swing\n" +
+        "%+kSoftware:%-k Git, Docker, AWS (S3, EC2, ECR), Google Cloud, LaTeX, Android Studio, Arduino, Maven\n" +
         "%+kDatabases:%-k PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB\n" +
         "%+kOperating Systems:%-k Linux (Arch, Fedora, Debian, CentOS, Kali, Qubes OS, Raspbian), Windows, OS X\n\n" +
         "%+kEmail:%-k %+aadsouza@gatech.edu%-a\n" +
@@ -42,8 +42,10 @@ var files = {
         "%+kLinkedIn:%-k %+ahttps://linkedin.com/in/ashish-dsouza%-a\n\n",
     "experience": {
       "amazon.txt": "\n%+a%+kAmazon%-k%-a\n" +
-          "Position: Software Developer Engineer Intern\n" +
-          "Description: Incoming SDE-1 Intern for Summer 2021\n" +
+          "Position: Software Development Engineering Intern\n" +
+          "Description: Worked in Search Science & AI with Magnus Ranking team to enhance search quality using the latest IR and NLP research\n" +
+          "Built distributed computing platform to further improve GPU-accelerated training speed by parallelizing advanced ML models\n" +
+          "Enabled multi-node, multi-GPU training for BERT, GPT-3, DNN models using PyTorch with distributed data parallelism\n" +
           "Dates: May 2021 - Present\n\n",
       "nead_werx.txt": "\n%+a%+kNead Werx, Inc.%-k%-a\n" +
           "Position: Database Developer Intern\n" +
