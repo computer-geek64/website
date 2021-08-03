@@ -1,4 +1,5 @@
 % Resume Data %
+\newif\ifpolitify
 \newif\ifhuffskew
 \newif\iffizz
 \newif\iftimelock
@@ -10,6 +11,7 @@
 \newif\ifmilesnap
 \newif\ifdeeplearningfortroposphericozoneprediction
 
+\politifytrue
 \huffskewtrue
 \fizztrue
 \timelocktrue
@@ -18,7 +20,7 @@
 \firestormtrue
 \kalistormfalse
 \watersmrtfalse
-\milesnaptrue
+\milesnapfalse
 \deeplearningfortroposphericozonepredictionfalse
 
 
@@ -36,6 +38,8 @@
 \usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
 
 
 % Fonts %
@@ -59,6 +63,8 @@
 \titlespacing*{\section}{0pt}{0pt}{4pt}
 \titleformat{\section}{\fontsize{13}{13}\selectfont\montserrat}{}{}{}[\titlerule]
 \setitemize{nosep,labelsep=2pt,leftmargin=*}
+\hypersetup{colorlinks=false}
+%\linespread{0.9}
 
 
 % Document %
@@ -72,11 +78,12 @@
     {\fontsize{24}{24}\selectfont{\ptserifbold{Ashish D'Souza}}}
     \\
     {\fontsize{10}{10}\selectfont{
-      {\notoserif{adsouza@gatech.edu |}}
-      {\notoserifbold{ashishdsouza.com}}
-      {\notoserif{| (302) 857-0030 |}}
-      {\notoserifbold{linkedin.com/in/ashish-dsouza}}
-      {\notoserif{| Winter Haven, FL}}
+      {\notoserif{\href{mailto:adsouza@gatech.edu}{adsouza@gatech.edu} |}}
+      {\notoserifbold{\href{https://ashishdsouza.com}{ashishdsouza.com}}}
+      {\notoserif{| \href{https://github.com/computer-geek64}{\faicon{github} computer-geek64} |}}
+      {\notoserif{\href{https://linkedin.com/in/ashish-dsouza/}{\faicon{linkedin} ashish-dsouza} |}}
+      {\notoserif{\faicon{phone} (302) 857-0030 |}}
+      {\notoserif{Winter Haven, FL}}
     }}
   \end{center}
 
@@ -96,39 +103,43 @@
       Bachelor of Science in
       {\ebgaramonditalic{Computer Science}}
       \textemdash{}
+      Threads: Intelligence \& Information Internetworks
+      \textemdash{}
       Major GPA: 4.0
     }
 
-    \item{
-      {\ebgaramondbold{Coursework}}
-      \textemdash{}
-      OOP, Data Struct. \& Algo., Discrete Math, Obj. \& Design, Lin. Alg., Multivar Calc., Comp. Org. \& Prog., Intro to AI
-    }
+    %\item{
+    %  {\ebgaramondbold{Coursework}}
+    %  \textemdash{}
+    %  OOP, Data Struct. \& Algo., Discrete Math, Obj. \& Design, Lin. Alg., Multivar Calc., Comp. Org. \& Prog., Intro to AI
+    %}
 
     %\item{
-    %  {\ebgaramondbold{Threads}}
+    %  Threads
     %  \textemdash{}
     %  Intelligence \& Information Internetworks
     %}
   \end{itemize}
 
-  \bigskip
+  \smallskip
 
 
   % Experience %
   \section*{EXPERIENCE}
 
-  %{\fontsize{12}{12}\selectfont{
-  %  {\ebgaramondbold{Amazon}}
-  %  | San Francisco, CA |
-  %  {\ebgaramonditalic{Software Development Engineer Intern}}
-  %  \hfill{}
-  %  May '21 - Present
-  %}}
+  {\fontsize{12}{12}\selectfont{
+    {\ebgaramondbold{Amazon}}
+    | Palo Alto, CA |
+    {\ebgaramonditalic{Software Development Engineering Intern}}
+    \hfill{}
+    May '21 - August '21
+  }}
 
-  %\begin{itemize}
-  %  \item{Incoming Amazon SDE-1 Intern for Summer 2021}
-  %\end{itemize}
+  \begin{itemize}
+    \item{Worked in Search Science \& AI with Magnus Ranking team to enhance search quality using the latest IR and NLP research}
+    \item{Built distributed computing platform to further improve GPU-accelerated training speed by parallelizing advanced ML models}
+    \item{Enabled multi-GPU training on multiple machines for BERT, GPT-3, DNN models using PyTorch with distributed data parallelism}
+  \end{itemize}
 
   {\fontsize{12}{12}\selectfont{
     {\ebgaramondbold{Nead Werx, Inc.}}
@@ -139,9 +150,8 @@
   }}
 
   \begin{itemize}
-    \item{Worked remotely with database team on Nead Werx product, MerchLogix, due to COVID-19 outbreak}
-
-    \item{Developed functional transcription software database for sample insurance company using PostgreSQL and Perl}
+    %\item{Developed audio transcription database using PostgreSQL and Perl, worked on solving issues with MerchLogix company product}
+    \item{Developed audio transcription database with PostgreSQL and scripted advanced database management functions using Perl}
   \end{itemize}
 
   {\fontsize{12}{12}\selectfont{
@@ -155,14 +165,33 @@
   \begin{itemize}
     \item{Constructed an autonomous aerial greenhouse gas data collection module with Arduino}
 
-    \item{Retrieved and analyzed satellite data with TensorFlow ML framework and Selenium}
+    \item{Web scraped satellite data on greenhouse gases with Selenium and created prediction models with TensorFlow neural networks}
   \end{itemize}
 
-  \bigskip
+  \smallskip
 
 
   % Projects %
   \section*{PROJECTS}
+
+  \ifpolitify
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Politify}}
+      | https://github.com/computer-geek64/politify
+      \hfill{}
+      Feb '21
+    }}
+
+    \begin{itemize}
+      \item{Determines the political bias among public figures by analyzing their tweets in an unbiased way using publicly available data on the internet}
+      \item{Designed back-end API and DBMS, web scraped tweets and wiki sources to obtain information on public figures for dataset aggregation}
+      \item{Trained BERT model for political classification and used cloud ML services to create keyword-based sentiment analysis helper model}
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, PyTorch, Transformers, CUDA, Pandas, Flask, PostgreSQL, ReactJS, Selenium, OpenAI GPT-3, Google Cloud
+      }
+    \end{itemize}
+  \fi
 
   \ifhuffskew
     {\fontsize{12}{12}\selectfont{
@@ -173,7 +202,7 @@
     }}
 
     \begin{itemize}
-      \item{An optimization of the Huffman compression algorithm for highly skewed alphabet distributions using an ordered replacement method}
+      \item{Optimizes the Huffman compression algorithm for highly skewed alphabet distributions using an ordered replacement method}
       \item{
         {\ebgaramondbold{Software:}}
         C++, Boost Libraries
@@ -212,7 +241,7 @@
     \begin{itemize}
       \item{TimeLock is a database-oriented implementation of the theoretical concept of time-lock encryption, using RSA 2048-bit encryption}
 
-      \item{Built the REST API to perform protected CRUD operations on the database, and the client CLI program to interface with the API}
+      \item{Built the REST API to perform CRUD operations on the database, and the client CLI program to interface with the API}
 
       \item{
         {\ebgaramondbold{Software:}}
@@ -365,7 +394,7 @@
     \end{itemize}
   \fi
 
-  \bigskip
+  \smallskip
 
 
   % Awards %
@@ -373,7 +402,7 @@
 
   \begin{itemize}
     \item{
-      HackGT Hackathon \textemdash{}
+      HackGT Hackathons \textemdash{}
       {\ebgaramonditalic{BlackRock Sponsor Award for Fizz Project}}
       (2020),
       {\ebgaramonditalic{PDI Sponsor Award for MileSnap Project}}
@@ -413,7 +442,7 @@
     }
   \end{itemize}
 
-  \bigskip
+  \smallskip
 
 
   % Skills %
@@ -422,17 +451,17 @@
   \begin{itemize}
     \item{
       {\ebgaramondbold{Programming Languages:}}
-      Python, Java, C, C++, Perl, Ruby, Bash, SQL, JavaScript, HTML/CSS, PHP, R
+      Python, Java, C, C++, Bash, SQL, \LaTeX, JavaScript, HTML/CSS, Perl, Ruby, PHP, R
     }
 
     \item{
       {\ebgaramondbold{Frameworks:}}
-      Django, Flask, Jinja, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO, OpenCV, Nokogiri, JavaFX \& Swing
+      Django, Flask, PyTorch, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO, OpenCV, JavaFX \& Swing
     }
 
     \item{
       {\ebgaramondbold{Software:}}
-      Android Studio, Arduino, Git, Maven, \LaTeX, Google Dialogflow
+      Git, Docker, AWS (S3, EC2, ECR), Google Cloud (Dialogflow, OCR, Natural Language), Android Studio, Arduino, Maven
     }
 
     \item{
