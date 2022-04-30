@@ -1,4 +1,5 @@
 % Resume Data %
+\newif\ifguardian
 \newif\ifpolitify
 \newif\ifhuffskew
 \newif\iffizz
@@ -11,10 +12,11 @@
 \newif\ifmilesnap
 \newif\ifdeeplearningfortroposphericozoneprediction
 
+\guardiantrue
 \politifytrue
 \huffskewtrue
 \fizztrue
-\timelocktrue
+\timelockfalse
 \covidsurvivalcalculatortrue
 \alrtfalse
 \firestormtrue
@@ -173,6 +175,24 @@
   % Projects %
   \section*{PROJECTS}
 
+  \ifguardian
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Guardian}}
+      | https://github.com/computer-geek64/guardian
+      \hfill
+      Jan '22
+    }}
+
+    \begin{itemize}
+      \item{My home surveillance and CCTV system that features motion detection and synchronized live audio and video streams over native HTTP}
+      \item{Implemented a multiprocessing load balancer to deal with resource-intensive stream processing, and leveraged shared memory for IPC}
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Docker, NGINX, NGINX Unit, Flask, FFmpeg, OpenCV, Motion, Docker Compose
+      }
+    \end{itemize}
+  \fi
+
   \ifpolitify
     {\fontsize{12}{12}\selectfont{
       {\ebgaramondbold{Politify}}
@@ -201,7 +221,7 @@
     }}
 
     \begin{itemize}
-      \item{Optimizes the Huffman compression algorithm for highly skewed alphabet distributions using an ordered replacement method}
+      \item{An optimization of the Huffman compression algorithm for highly skewed alphabet distributions using an ordered replacement method}
       \item{
         {\ebgaramondbold{Software:}}
         C++, Boost Libraries
@@ -298,9 +318,11 @@
     }}
 
     \begin{itemize}
-      \item{Created and maintained a personal server running a custom version of CentOS 8 for secure file sharing/centralization, remote code\\development, penetration testing, password/secret management, media streaming, and gaming.}
+      \item{Created and maintained a personal server for file sharing, automated backups, personal informatics, media streaming, gaming, etc.}
 
-      \item{Built a private projects codebase using Git VCS and backed by a PostgreSQL database system, accessible through the web interface}
+      \item{Built a remote private projects VCS hosting system using Git and backed by a PostgreSQL database, accessible through the web interface}
+
+      \item{Hosted an OpenVPN server, and fixed DNS leaks by implementing a private recursive resolver and domain filter, secured with DNSSEC}
 
       \item{
         {\ebgaramondbold{Software:}}
@@ -450,27 +472,27 @@
   \begin{itemize}
     \item{
       {\ebgaramondbold{Programming Languages:}}
-      Python, Java, C, C++, Bash, SQL, \LaTeX, JavaScript, HTML/CSS, Perl, Ruby, PHP, R
+      Python, C/C++, Java, Bash, SQL, JavaScript, HTML/CSS, \LaTeX, Perl, Ruby, PHP, R
     }
 
     \item{
       {\ebgaramondbold{Frameworks:}}
-      Django, Flask, PyTorch, TensorFlow, Pandas, Spring Boot, Rails, Selenium, SocketIO, OpenCV, JavaFX \& Swing
+      Flask, Django, PyTorch, TensorFlow, Pandas, Spring Boot, Pistache, Rails, OpenCV, Selenium, SocketIO, JavaFX \& Swing
     }
 
     \item{
       {\ebgaramondbold{Software:}}
-      Git, Docker, AWS (S3, EC2, ECR), Google Cloud (Dialogflow, OCR, Natural Language), Android Studio, Arduino, Maven
+      Git, Docker, NGINX, Apache, NGINX Unit, AWS (S3, EC2, ECR), Google Cloud (OCR, NLP), Arduino, Maven
     }
 
     \item{
       {\ebgaramondbold{Databases:}}
-      PostgreSQL, MySQL, MongoDB, Apache Cassandra, SQLite, MariaDB
+      PostgreSQL, MySQL, Redis, MongoDB, Apache Cassandra, SQLite, MariaDB
     }
 
     \item{
       {\ebgaramondbold{Operating Systems:}}
-      Linux (Arch, Fedora, Debian, CentOS, Kali, Qubes OS, Raspbian, Ubuntu), Windows, OS X
+      Linux (Arch, CentOS, RHEL, Debian, Fedora, Kali, Qubes, Raspbian, Ubuntu), Windows, OS X
     }
   \end{itemize}
 \end{document}
