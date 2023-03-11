@@ -1,11 +1,12 @@
 - name: Install website
   hosts: Moria
   tasks:
-  - name: Copy source files
+  - name: Synchronize source files
     become: true
-    ansible.builtin.copy:
+    ansible.posix.rsync:
       src: src/
       dest: /srv/http/website/
+      delete: true
   - name: Copy Nginx config file for website
     become: true
     ansible.builtin.copy:
