@@ -3,7 +3,7 @@
   tasks:
   - name: Synchronize source files
     become: true
-    ansible.posix.rsync:
+    ansible.posix.synchronize:
       src: src/
       dest: /srv/http/website/
       delete: true
