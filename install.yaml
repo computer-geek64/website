@@ -1,0 +1,51 @@
+- name: Install website
+  hosts: Moria
+  tasks:
+  - name: Copy source files
+    become: true
+    ansible.builtin.copy:
+      src: src/
+      dest: /srv/http/website/
+  - name: Copy Nginx config file for website
+    become: true
+    ansible.builtin.copy:
+      src: config/nginx.conf
+      dest: /data/nginx-config/website.conf
+      mode: preserve
+
+  - name: Read homelab config
+    ansible.builtin.slurp:
+      src: '{{ansible_user_dir}}/.homelab.json'
+    register: homelab_config_file
+  - name: Set homelab_config variable
+    ansible.builtin.set_fact:
+      homelab_config: '{{homelab_config_file.content|b64decode|from_json}}'
+
+  - name: Insert into Postgres table service
+    community.postgresql.postgresql_query:
+      login_host: '{{homelab_config.database.host}}'
+      login_user: '{{homelab_config.database.user}}'
+      login_password: '{{homelab_config.database.password}}'
+      db: '{{homelab_config.database.name}}'
+      query: 'INSERT INTO service (name, host, config) VALUES (%s, %s, %s) ON CONFLICT DO NOTHING;'
+      positional_args:
+      - '{{item.name}}'
+      - '{{item.host}}'
+      - '{{item.config}}'
+    with_items:
+    - {name: website, host: '{{ansible_hostname}}', config: null}
+  - name: Insert into Postgres table service_port
+    community.postgresql.postgresql_query:
+      login_host: '{{homelab_config.database.host}}'
+      login_user: '{{homelab_config.database.user}}'
+      login_password: '{{homelab_config.database.password}}'
+      db: '{{homelab_config.database.name}}'
+      query: 'INSERT INTO service_port (service, port, domain, reverse_proxy, reverse_proxy_port) VALUES (%s, %s, %s, %s, %s) ON CONFLICT DO NOTHING;'
+      positional_args:
+      - '{{item.service}}'
+      - '{{item.port}}'
+      - '{{item.domain}}'
+      - '{{item.reverse_proxy}}'
+      - '{{item.reverse_proxy_port}}'
+    with_items:
+    - {service: website, port: 443, domain: ashishdsouza.com, reverse_proxy: nginx_moria, reverse_proxy_port: 443}
