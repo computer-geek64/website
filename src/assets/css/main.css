@@ -1,24 +1,48 @@
-html {
-  font-variant-ligatures: none;
-}
-
 body {
-  background-color: black;
-  margin: 0px;
+    color: white;
+    background-color: black;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 0 20vw;
 }
 
-.font {
-  font-family: courier, monospace;
-  font-size: 15px;
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#term {
-  left: calc(50% - 904px / 2) !important;
-  top: 50px !important;
-  margin-left: auto;
-  position: absolute;
+#header > h1 {
+    #letter-spacing: 2px;
 }
 
-a span {
-  color: #0bc0bc !important;
+nav > a {
+    padding-left: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+table td {
+    padding-right: 20px;
+}
+
+table.bold-column-2 tr td:nth-child(2) {
+    font-weight: bold;
 }
