@@ -5,7 +5,7 @@
     become: true
     ansible.posix.synchronize:
       src: src/
-      dest: /srv/http/website/
+      dest: /data/nginx-static/website/
       delete: true
   - name: Copy Nginx config file for website
     become: true
