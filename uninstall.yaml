@@ -9,7 +9,7 @@
   - name: Remove source files
     become: true
     ansible.builtin.file:
-      path: /srv/http/website
+      path: /data/nginx-static/website
       state: absent
 
   - name: Read homleab config
