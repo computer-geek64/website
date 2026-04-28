@@ -1,4 +1,22 @@
 % Resume Data %
+% Experience %
+\newif\ifakuna
+\newif\ifcitadel
+\newif\ifakunaintern
+\newif\ifamazon
+\newif\ifmerchlogix
+\newif\ifoscar
+
+\akunatrue
+\citadeltrue
+\akunainterntrue
+\amazontrue
+\merchlogixtrue
+\oscarfalse
+
+% Projects %
+\newif\ifhomelab
+\newif\ifemboxd
 \newif\ifguardian
 \newif\ifpolitify
 \newif\ifhuffskew
@@ -12,14 +30,16 @@
 \newif\ifmilesnap
 \newif\ifdeeplearningfortroposphericozoneprediction
 
+\homelabtrue
+\emboxdtrue
 \guardiantrue
 \politifytrue
 \huffskewtrue
-\fizztrue
+\fizzfalse
 \timelockfalse
-\covidsurvivalcalculatortrue
+\covidsurvivalcalculatorfalse
 \alrtfalse
-\firestormtrue
+\firestormfalse
 \kalistormfalse
 \watersmrtfalse
 \milesnapfalse
@@ -35,7 +55,7 @@
 
 
 % Packages %
-\usepackage[left=0.25in,right=0.25in,top=0.3in,bottom=0.3in]{geometry}
+\usepackage[left=0.25in,right=0.25in,top=0.4in,bottom=0.4in]{geometry}
 \usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -55,7 +75,7 @@
 
 % Metadata %
 \title{Resume}
-\date{2022-07-10}
+\date{2026-04-28}
 \author{Ashish D'Souza}
 
 
@@ -79,48 +99,43 @@
     {\fontsize{24}{24}\selectfont{\ptserifbold{Ashish D'Souza}}}
     \\
     {\fontsize{10}{10}\selectfont{
-      {\notoserif{\href{mailto:adsouza@gatech.edu}{adsouza@gatech.edu} |}}
-      {\notoserifbold{\href{https://ashishdsouza.com}{ashishdsouza.com}}}
+        {\notoserif{\href{mailto:recruiting@ashishdsouza.com}{\faicon{envelope} recruiting@ashishdsouza.com} |}}
+      {\notoserifbold{\href{https://ashishdsouza.com}{\faicon{link} ashishdsouza.com}}}
       {\notoserif{| \href{https://github.com/computer-geek64}{\faicon{github} computer-geek64} |}}
       {\notoserif{\href{https://linkedin.com/in/ashish-dsouza/}{\faicon{linkedin} ashish-dsouza} |}}
-      {\notoserif{\faicon{phone} (302) 857-0030 |}}
-      {\notoserif{Winter Haven, FL}}
+      {\notoserif{\faicon{map-marker} Chicago, IL}}
     }}
   \end{center}
 
 
-  % Education %
-  \section*{EDUCATION}
-
-  {\fontsize{12}{12}\selectfont{
-    {\ebgaramondbold{Georgia Institute of Technology}}
-    | Atlanta, GA
-    \hfill{}
-    May 2023
-  }}
-
-  \begin{itemize}
-    \item{
-      Bachelor of Science in
-      {\ebgaramonditalic{Computer Science}}
-      \textemdash{}
-      Threads: Intelligence \& Information Internetworks
-      \textemdash{}
-      GPA: 3.93
-    }
-
-    %\item{
-    %  Threads
-    %  \textemdash{}
-    %  Intelligence \& Information Internetworks
-    %}
-  \end{itemize}
-
-  \smallskip
-
-
   % Experience %
   \section*{EXPERIENCE}
+
+  \ifakuna
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Akuna Capital}}
+      | Software Engineer II
+      | {\ebgaramonditalic{Post-Trade Technology}}
+      | Chicago, IL
+      \hfill{}
+      Aug '23 - Present
+    }}
+
+    \begin{itemize}
+      \item{Built and maintained in-house trade monitoring software; implemented complex surveillance logic to supervise messaging activity, prevent fines, detect market manipulation, track trading efficiency, ensure market maker status, and adhere to exchange/regulatory requirements}
+      % \item{Proposed new distributed surveillance design and successfully led team-wide rearchitecture to handle billions of daily quotes in realtime}
+      \item{Proposed new design for a distributed surveillance architecture that scales with high market volatility and trading activity. \\
+            Successfully led this team-wide rearchitecture project to process billions of daily quotes in realtime while also reducing costs.}
+      \item{Supported key product/exchange expansions and trader operations with accurate market maker obligations and incentives monitoring}
+      % \item{Supported product expansions and trader operations by monitoring quoting obligations and incentives to retain firm market maker status}
+      \item{Extensive experience with order entry and market data protocols across equity, option, and future exchanges (and PFOF/other ATS)}
+      \item{Managed 3 interns, providing mentorship and constructive feedback, guiding all to recieve return offers for full-time SWE/quant positions}
+      \item{
+        {\ebgaramondbold{Software:}}
+        Python, Scala, JavaScript, Databricks, Postgres, Kafka, React, Grafana, Kubernetes, AWS, etc.
+      }
+    \end{itemize}
+  \fi
 
   {\fontsize{12}{12}\selectfont{
     {\ebgaramondbold{Citadel Securities}}
@@ -139,14 +154,14 @@
   {\fontsize{12}{12}\selectfont{
     {\ebgaramondbold{Akuna Capital}}
     | Software Engineer Intern
-    | {\ebgaramonditalic{Compliance Team}}
+    | {\ebgaramonditalic{Post-Trade Technology}}
     | Chicago, IL
     \hfill{}
     Jun '22 - Aug '22
   }}
 
   \begin{itemize}
-    \item{Wrote an audit trail generator to efficiently parse terabytes of order entry messages on a daily basis to respond to exchange inquiries}
+    \item{Wrote an audit trail generator to efficiently parse terabytes of order entry messages on-demand in response to exchange inquiries}
     \item{Created market maker quoting surveillances to ensure the company meets exchange standards for newly traded cryptocurrency options}
   \end{itemize}
 
@@ -179,18 +194,50 @@
     \item{Developed audio transcription database with PostgreSQL and scripted advanced database management functions using Perl}
   \end{itemize}
 
+  \ifoscar
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Optical Science Center for Applied Research}}
+      | Research Intern
+      | {\ebgaramonditalic{Laser Spectroscopy Team}}
+      | Dover, DE
+      \hfill{}
+      Jun '17 - Jun '19
+    }}
+
+    \begin{itemize}
+      \item{Constructed an ultrasensitive IR-based trace gas sensing module with Arduino, under a NASA research grant for Mars exploration}
+      \item{Scraped satellite data on greenhouse gases with Selenium and created forecasting/prediction models with TensorFlow neural networks}
+    \end{itemize}
+  \fi
+
+  \smallskip
+
+
+  % Education %
+  \section*{EDUCATION}
+
   {\fontsize{12}{12}\selectfont{
-    {\ebgaramondbold{Optical Science Center for Applied Research}}
-    | Research Intern
-    | {\ebgaramonditalic{Laser Spectroscopy Team}}
-    | Dover, DE
+    {\ebgaramondbold{Georgia Institute of Technology}}
+    | Atlanta, GA
     \hfill{}
-    Jun '17 - Jun '19
+    May 2023
   }}
 
   \begin{itemize}
-    \item{Constructed an ultrasensitive IR-based trace gas sensing module with Arduino, under a NASA research grant for Mars exploration}
-    \item{Scraped satellite data on greenhouse gases with Selenium and created forecasting/prediction models with TensorFlow neural networks}
+    \item{
+      Bachelor of Science in
+      {\ebgaramonditalic{Computer Science}}
+      \textemdash{}
+      Threads: Intelligence \& Information Internetworks
+      \textemdash{}
+      GPA: 3.93
+    }
+
+    %\item{
+    %  Threads
+    %  \textemdash{}
+    %  Intelligence \& Information Internetworks
+    %}
   \end{itemize}
 
   \smallskip
@@ -199,11 +246,47 @@
   % Projects %
   \section*{PROJECTS}
 
+  \ifhomelab
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{Homelab}}
+      | https://github.com/computer-geek64/homelab | https://uptime.ashishdsouza.com
+      \hfill{}
+      Dec '18 - Present
+    }}
+
+    \begin{itemize}
+      \item{Deployed and maintaining international fleet of 16+ servers both on-prem and in the cloud, providing various services to myself and others}
+      \item{Requires work and experience in nearly every field of technology including devops, systems, networking, security, databases, software, etc.}
+      \item{
+        {\ebgaramondbold{Software:}}
+        Docker, Kubernetes, Ansible, Git, Jenkins, Linux, macOS, Nginx, Wireguard, Iptables, Postgres, MySQL, Python, Go, etc.
+      }
+    \end{itemize}
+  \fi
+
+  \ifemboxd
+    {\fontsize{12}{12}\selectfont{
+      {\ebgaramondbold{EmBoxd}}
+      | https://github.com/computer-geek64/emboxd (44 stars)
+      \hfill{}
+      Feb '25 - Jan '26
+    }}
+
+    \begin{itemize}
+      \item{Live sync web server for Letterboxd users with self-hosted media platforms, synchronizing watch activity with browser automation}
+      \item{
+        {\ebgaramondbold{Software:}}
+        Go, Playwright, Docker, GitHub Actions
+      }
+    \end{itemize}
+  \fi
+
   \ifguardian
     {\fontsize{12}{12}\selectfont{
       {\ebgaramondbold{Guardian}}
       | https://github.com/computer-geek64/guardian
-      \hfill
+      \textrightarrow{} https://gitea.ashishdsouza.com/ashish/frigate
+      \hfill{}
       Jan '22
     }}
 
@@ -213,7 +296,7 @@
       \item{Separated image processing from web server into a background process with a message queue, reducing overhead for multi-user streaming}
       \item{
         {\ebgaramondbold{Software:}}
-        Python, Docker, NGINX, NGINX Unit, Flask, Redis, FFmpeg, OpenCV, Motion, Docker Compose, Jenkins
+        Python, Docker, Nginx, Nginx Unit, Flask, Redis, FFmpeg, OpenCV, Motion, Jenkins
       }
     \end{itemize}
   \fi
@@ -497,17 +580,17 @@
   \begin{itemize}
     \item{
       {\ebgaramondbold{Programming Languages:}}
-      Python, C/C++, Java, SQL, Bash, JavaScript, HTML/CSS, \LaTeX, Perl, Ruby, PHP, R
+      Python, Go, C++, C, Java, SQL, Bash, JavaScript, HTML/CSS, \LaTeX, Ruby, Perl, PHP, R
     }
 
-    \item{
-      {\ebgaramondbold{Frameworks:}}
-      Flask, FastAPI, Django, Pandas, PySpark, PyTorch, TensorFlow, Boost, Spring Boot, Pistache, Rails, OpenCV, SocketIO%, Selenium, JavaFX/Swing
-    }
+    % \item{
+    %   {\ebgaramondbold{Frameworks:}}
+    %   Flask, FastAPI, Django, Pandas, PySpark, PyTorch, TensorFlow, Boost, Spring Boot, Pistache, Rails, OpenCV, SocketIO%, Selenium, JavaFX/Swing
+    % }
 
     \item{
       {\ebgaramondbold{Software:}}
-      Git, Docker, Databricks, Spark, NGINX, NGINX Unit, Apache HTTP, Kafka, Ansible, Jenkins, Maven, AWS, GCP, Azure
+      Git, Docker, Kubernetes, Kafka, Databricks, Spark, Redis, Nginx, Apache2, Ansible, Jenkins, Grafana, AWS, GCP, Azure
     }
 
     \item{
@@ -515,15 +598,14 @@
       PostgreSQL, MySQL, Redis, MongoDB, Apache Cassandra, SQLite, MariaDB
     }
 
-    %\item{
+    % \item{
     %  {\ebgaramondbold{Cloud:}}
     %  Databricks, AWS (S3, EC2, ECR), Google Cloud (OCR, NLP), Microsoft Azure (CV)
-    %}
+    % }
 
     \item{
       {\ebgaramondbold{Operating Systems:}}
-      Linux (Arch, CentOS, RHEL, Debian, Fedora, Ubuntu, Raspbian, Kali, Qubes), Windows, OS X
+      Linux (Arch, CentOS, RHEL, Debian, Fedora, Ubuntu, Raspbian, Kali, Qubes), Windows, macOS
     }
   \end{itemize}
 \end{document}
-
